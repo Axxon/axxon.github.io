@@ -8,6 +8,8 @@ permalink: /books/
 
 <img src="https://matthiasnoback.nl/assets/books/style-guide-for-object-design.jpg" width=300 height=400>
 
+![test](https://matthiasnoback.nl/assets/books/style-guide-for-object-design.jpg){:height="400px" width="300px"}
+
 [more](https://www.manning.com/books/object-design-style-guide?a_aid=object-design&a_bid=4e089b42)
 
 <img src="https://matthiasnoback.nl/assets/books/principles-of-package-design.jpg" width=300 height=400>
