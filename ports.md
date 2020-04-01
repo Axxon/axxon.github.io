@@ -14,6 +14,8 @@ permalink: /ports/
 | ~/Music  |[Youtube](https://bitlink.me/ArrlA)                    | Audio playlists                                                                           |
 | ~/Music  |[Deezer](https://www.deezer.com/en/profile/4661204)    | A lot of different styles playlist and albums select                                      |
 | ~/Music  |[MixCloud](https://www.mixcloud.com/Axxon/)            | Some mixes and track selections                                                           |
+| ~/Music  |[RateYourMusic](https://bitlink.me/AoJoB)              | NonTkDiscs                                                                                |
+| ~/Music  |[Discogs](https://www.discogs.com/user/Ackson)         | TekReleases                                                                               |
 | ~/Image  |[Pinterest](https://www.pinterest.fr/toulilou/)        | Pictures of the world                                                                     |
 | ~/Cine   |[IDBM](https://www.imdb.com/user/ur27334025/)          | Favorites movies (prefered site)                                                          |
 | ~/Cine   |[Allocine](https://bitlink.me/BlWNM)                   | Used before to save favorites movies                                                      |
