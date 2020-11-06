@@ -6,7 +6,7 @@ permalink: /ports/
 
 |----------|-------------------------------------------------------|:-----------------------------------------------------------------------------------------:|
 | ~/Web    |[LinkedIn](https://www.linkedin.com/in/axxon/)         | Contact me here for a job or communicate with me for professionnals reasons               |
-| ~/Web    |[Twitter](https://twitter.com/PhronimaAxxon)           | Not really active but you can enjoy my network (a lot of web top developers subscriptions)|
+| ~/Web    |[Twitter](https://twitter.com/Axxon_)                  | Not really active but you can enjoy my network (a lot of web top developers subscriptions)|
 | ~/Web    |[GitHub](https://github.com/Axxon)                     | Maybe some "stars" repository should help you                                             |
 | ~/Web    |[StackOverflow](https://bitlink.me/MX5NB)              | Various questions to the dev community                                                    |
 | ~/Web    |[Youtube](https://bitlink.me/g4Z7B)                    | Find here my programmings videos playlist                                                 |
