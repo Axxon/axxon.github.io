@@ -30,6 +30,37 @@ body {
   margin: 0 auto;
 }
 
+.language-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.language-label {
+  font-size: 0.84rem;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.language-select {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(10, 24, 38, 0.56);
+  color: var(--ink);
+  padding: 8px 10px;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.language-select:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 2px;
+}
+
 .panel {
   border: 1px solid var(--border);
   background: var(--panel);
@@ -342,6 +373,10 @@ a:focus-visible {
 @media (max-width: 680px) {
   body {
     padding: 16px 10px 22px;
+  }
+
+  .language-toolbar {
+    justify-content: flex-start;
   }
 
   .nav-panel,

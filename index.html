@@ -1,17 +1,219 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Axxon | Ingénieur back-end PHP - Architecture microservices, performance et fiabilité</title>
-  <meta name="description" content="CV d'Axxon, ingénieur back-end PHP spécialisé en architecture microservices, performance, fiabilité et usage de l'IA générative (Codex).">
+  <title>Axxon | PHP Back-end Engineer - Microservices architecture, performance and reliability</title>
+  <meta name="description" content="Resume of Axxon, PHP back-end engineer specialized in microservices architecture, performance, reliability, and use of generative AI (Codex).">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="page">
+  <div class="page language-toolbar">
+    <label for="language-select" id="language-label" class="language-label">Language</label>
+    <select id="language-select" class="language-select" aria-label="Select language">
+      <option value="en" selected>English</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
+
+  <main class="page" data-lang="en" id="page-en">
+    <header class="header">
+      <div>
+        <p class="eyebrow">Resume</p>
+        <h1>Axxon</h1>
+        <p class="subtitle">PHP Back-end Engineer · Microservices architecture, performance and reliability · France · Full remote</p>
+      </div>
+      <section class="panel nav-panel" aria-label="Main navigation">
+        <a class="nav-link" href="https://axxon.github.io/public-worklog/" target="_blank" rel="noopener noreferrer">Public Worklog <span>Current project</span></a>
+        <a class="nav-link" href="https://github.com/Axxon" target="_blank" rel="noopener noreferrer">GitHub <span>github.com/Axxon</span></a>
+        <a class="nav-link" href="./cv.md">Markdown Version <span>Editable source</span></a>
+      </section>
+    </header>
+
+    <section class="panel intro-panel" id="profile-en">
+      <div class="section-head">
+        <h2>Profile</h2>
+      </div>
+      <p>Back-end oriented software engineer since 2016, specialized in PHP (Symfony/Laravel), microservices architecture and software quality (TDD).</p>
+      <p>I work on critical services, application performance and platform reliability, with a strong product mindset and continuous delivery culture.</p>
+      <p>I integrate generative AI (including Codex) into my workflows for analysis, refactoring, documentation and automation.</p>
+    </section>
+
+    <section class="kpi-grid" aria-label="Highlights">
+      <article class="panel kpi">
+        <p class="kpi-label">Experience</p>
+        <p class="kpi-value">Since 2016</p>
+      </article>
+      <article class="panel kpi">
+        <p class="kpi-label">Specialty</p>
+        <p class="kpi-value">PHP Back-end</p>
+      </article>
+      <article class="panel kpi">
+        <p class="kpi-label">Architecture</p>
+        <p class="kpi-value">Microservices</p>
+      </article>
+      <article class="panel kpi">
+        <p class="kpi-label">Delivery</p>
+        <p class="kpi-value">Docker · CI/CD</p>
+      </article>
+    </section>
+
+    <section class="panel section" id="skills-en">
+      <div class="section-head">
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="detail-card">
+          <h3>Back-end</h3>
+          <p class="chip-list">PHP 5/7/8 · JavaScript/TypeScript · Symfony · Laravel · Node.js · SQL · Doctrine · Eloquent · API Platform · OpenAPI · RabbitMQ</p>
+        </article>
+        <article class="detail-card">
+          <h3>Data &amp; Performance</h3>
+          <p class="chip-list">MySQL · MariaDB · PostgreSQL · MongoDB · Redis · ElasticSearch</p>
+        </article>
+        <article class="detail-card">
+          <h3>Front-end</h3>
+          <p class="chip-list">Vue.js · HTML5 · CSS3 · Webpack · Twig · Bootstrap · Tailwind CSS</p>
+        </article>
+        <article class="detail-card">
+          <h3>DevOps &amp; Delivery</h3>
+          <p class="chip-list">Docker · Make · Vagrant · GitLab CI/CD · AWS CloudWatch · Nginx · Apache</p>
+        </article>
+        <article class="detail-card">
+          <h3>Software Quality</h3>
+          <p class="chip-list">PHPUnit · Atoum · Mockery · PhpSpec · Behat · Xdebug · Postman · PHPStan · Code Sniffer · TDD</p>
+        </article>
+        <article class="detail-card">
+          <h3>Architecture &amp; Methods</h3>
+          <p class="chip-list">DDD · Hexagonal · CQRS · AMQP · OOP · SOLID · Microservices · PSR · Agile Scrum · Git · Codex · Generative AI applied to software development</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel section" id="experience-en">
+      <div class="section-head">
+        <h2>Recent Experience</h2>
+      </div>
+      <div class="timeline">
+        <article class="project-box">
+          <div class="project-head">
+            <h3>Evina · Back-End Developer</h3>
+            <p class="project-meta">June 2022 → June 2024</p>
+          </div>
+          <p class="project-line">Cybersecurity and mobile payments · evina.com</p>
+          <ul>
+            <li>Strengthened back-end architecture and critical microservices.</li>
+            <li>Migrated flows and data from MySQL to Redis to improve performance.</li>
+            <li>Integrated Auth0 to centralize identity management.</li>
+            <li>Docker containerization, on-call participation, and sharing OOP/TDD practices.</li>
+          </ul>
+          <p class="impact">Results: faster response times, stronger code quality, and accelerated feature delivery.</p>
+          <p class="project-tags">Stack: PHP, Laravel, Redis, Docker, Auth0, JavaScript, GitLab CI</p>
+        </article>
+
+        <article class="project-box">
+          <div class="project-head">
+            <h3>Sapiendo · Lead Back-End Developer / DevOps</h3>
+            <p class="project-meta">February 2021 → May 2022</p>
+          </div>
+          <p class="project-line">Retirement services and business automation · sapiendo-retraite.fr</p>
+          <ul>
+            <li>Designed Symfony microservices converting PDF to XML through API Platform.</li>
+            <li>Set up a complete GitLab CI/CD pipeline with Docker.</li>
+            <li>Developed Nuxt.js front-end features and business configuration APIs.</li>
+            <li>Automated deployments, contributed to AWS migration, and monitored with CloudWatch/Sentry.</li>
+          </ul>
+          <p class="project-tags">Stack: Symfony 5/6, PHP 8, Docker, API Platform, Nuxt.js, Postman, GitLab CI/CD, AWS, Sentry</p>
+        </article>
+
+        <article class="project-box">
+          <div class="project-head">
+            <h3>Groupe Blachere · Back-End Developer</h3>
+            <p class="project-meta">December 2020 → January 2021</p>
+          </div>
+          <p class="project-line">Logistics and optimization · groupe-blachere.com</p>
+          <ul>
+            <li>Rapid prototyping and business needs modeling.</li>
+            <li>UX contribution with 2D visualization.</li>
+          </ul>
+          <p class="project-tags">Stack: Symfony 5, PHPStan, Docker</p>
+        </article>
+
+        <article class="project-box">
+          <div class="project-head">
+            <h3>SensioLabs · Back-End Developer</h3>
+            <p class="project-meta">2018</p>
+          </div>
+          <p class="project-line">Symfony framework and training · sensiolabs.com</p>
+          <ul>
+            <li>Built event websites and internal demo platforms.</li>
+            <li>Developed Symfony APIs through API Platform.</li>
+            <li>Implemented RabbitMQ, BDD/unit testing, and Docker/Travis CI workflows.</li>
+          </ul>
+          <p class="project-tags">Stack: Symfony 3/4, API Platform, React, Docker, RabbitMQ, Behat, Travis CI</p>
+        </article>
+
+        <article class="project-box">
+          <div class="project-head">
+            <h3>Norsys · Back-End Developer</h3>
+            <p class="project-meta">2016 → 2018</p>
+          </div>
+          <p class="project-line">Consulting and enterprise projects · norsys.fr</p>
+          <ul>
+            <li>Implemented LDAP and dynamic forms.</li>
+            <li>Technical lead role on a Franprix project.</li>
+            <li>Built Symfony authentication, modular architecture, and ES6/Webpack front-end.</li>
+          </ul>
+          <p class="project-tags">Stack: Symfony 3, PostgreSQL Pomm, Webpack, ES6, Docker, Vagrant</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel section" id="other-experience-en">
+      <div class="section-head">
+        <h2>Other Experience</h2>
+      </div>
+      <ul class="compact-list">
+        <li><strong>ActivCompany (apprenticeship, 2015)</strong> : ERP, showcase websites, Symfony2 social network.</li>
+        <li><strong>YouMiam (apprenticeship, 2015)</strong> : Symfony front/back development for a culinary social network.</li>
+        <li><strong>E-testing (freelance)</strong> : 3 PHP/Docker technical review engagements.</li>
+        <li><strong>Indexx (freelance)</strong> : one-month mission on OAuth, Sells, Twilio, NestJS.</li>
+      </ul>
+    </section>
+
+    <section class="panel section" id="personal-projects-en">
+      <div class="section-head">
+        <h2>Personal Projects</h2>
+      </div>
+      <ul class="compact-list">
+        <li>DDD/TDD-oriented microservices RSS aggregator.</li>
+        <li>Discogs/Bandcamp/Deezer exploration tools for discographic metadata.</li>
+        <li>Testing experiments and tooling on open-source repositories (GitHub Stars).</li>
+        <li>Public Worklog: continuous publication of a technical journal with a Codex-assisted workflow.</li>
+        <li>Technical projects around modular synthesis and sound.</li>
+        <li>ModularGrid-like Laravel/VueJS prototype to experiment with new AI-assisted ideas.</li>
+      </ul>
+      <a class="project-cta" href="https://axxon.github.io/public-worklog/" target="_blank" rel="noopener noreferrer">See current project: Public Worklog</a>
+    </section>
+
+    <section class="panel section" id="education-en">
+      <div class="section-head">
+        <h2>Education</h2>
+      </div>
+      <ul class="compact-list">
+        <li><strong>2024</strong> · Bachelor's degree in Event Project Management, Modulus (rating 8.4/10).</li>
+        <li><strong>2012</strong> · DEST Webmaster, University of Limoges (remote learning).</li>
+        <li><strong>2008</strong> · Postgraduate diploma in Jazz Piano, Annecy Conservatory.</li>
+        <li><strong>2005</strong> · STI technical high school diploma, Baudelaire High School Annecy.</li>
+      </ul>
+      <p class="languages">Languages: French · Fluent English (professional and technical).</p>
+    </section>
+  </main>
+
+  <main class="page" data-lang="fr" id="page-fr" hidden>
     <header class="header">
       <div>
         <p class="eyebrow">CV</p>
@@ -25,7 +227,7 @@
       </section>
     </header>
 
-    <section class="panel intro-panel" id="profil">
+    <section class="panel intro-panel" id="profile-fr">
       <div class="section-head">
         <h2>Profil</h2>
       </div>
@@ -53,7 +255,7 @@
       </article>
     </section>
 
-    <section class="panel section" id="competences">
+    <section class="panel section" id="skills-fr">
       <div class="section-head">
         <h2>Compétences</h2>
       </div>
@@ -85,7 +287,7 @@
       </div>
     </section>
 
-    <section class="panel section" id="experiences">
+    <section class="panel section" id="experience-fr">
       <div class="section-head">
         <h2>Expériences récentes</h2>
       </div>
@@ -164,7 +366,7 @@
       </div>
     </section>
 
-    <section class="panel section" id="autres-experiences">
+    <section class="panel section" id="other-experience-fr">
       <div class="section-head">
         <h2>Autres expériences</h2>
       </div>
@@ -176,7 +378,7 @@
       </ul>
     </section>
 
-    <section class="panel section" id="projets-personnels">
+    <section class="panel section" id="personal-projects-fr">
       <div class="section-head">
         <h2>Projets personnels</h2>
       </div>
@@ -191,7 +393,7 @@
       <a class="project-cta" href="https://axxon.github.io/public-worklog/" target="_blank" rel="noopener noreferrer">Voir le projet en cours: Public Worklog</a>
     </section>
 
-    <section class="panel section" id="formation">
+    <section class="panel section" id="education-fr">
       <div class="section-head">
         <h2>Formation</h2>
       </div>
@@ -204,5 +406,73 @@
       <p class="languages">Langues: Français · Anglais courant (professionnel et technique).</p>
     </section>
   </main>
+
+  <script>
+    (function () {
+      var select = document.getElementById('language-select');
+      var label = document.getElementById('language-label');
+      var pages = {
+        en: document.getElementById('page-en'),
+        fr: document.getElementById('page-fr')
+      };
+      var metaDescription = document.querySelector('meta[name="description"]');
+      var languageMeta = {
+        en: {
+          label: 'Language',
+          title: 'Axxon | PHP Back-end Engineer - Microservices architecture, performance and reliability',
+          description: 'Resume of Axxon, PHP back-end engineer specialized in microservices architecture, performance, reliability, and use of generative AI (Codex).'
+        },
+        fr: {
+          label: 'Langue',
+          title: 'Axxon | Ingénieur back-end PHP - Architecture microservices, performance et fiabilité',
+          description: "CV d'Axxon, ingénieur back-end PHP spécialisé en architecture microservices, performance, fiabilité et usage de l'IA générative (Codex)."
+        }
+      };
+
+      function safeReadLang() {
+        try {
+          return window.localStorage.getItem('cv-language');
+        } catch (error) {
+          return null;
+        }
+      }
+
+      function safeStoreLang(lang) {
+        try {
+          window.localStorage.setItem('cv-language', lang);
+        } catch (error) {
+          // Ignore storage errors
+        }
+      }
+
+      function applyLanguage(lang) {
+        if (!pages[lang]) {
+          lang = 'en';
+        }
+
+        pages.en.hidden = lang !== 'en';
+        pages.fr.hidden = lang !== 'fr';
+        document.documentElement.lang = lang;
+        select.value = lang;
+
+        var meta = languageMeta[lang];
+        document.title = meta.title;
+        label.textContent = meta.label;
+
+        if (metaDescription) {
+          metaDescription.setAttribute('content', meta.description);
+        }
+      }
+
+      var initialLang = safeReadLang();
+      applyLanguage(initialLang === 'fr' ? 'fr' : 'en');
+
+      select.addEventListener('change', function (event) {
+        var lang = event.target.value === 'fr' ? 'fr' : 'en';
+        applyLanguage(lang);
+        safeStoreLang(lang);
+      });
+    })();
+  </script>
 </body>
 </html>
