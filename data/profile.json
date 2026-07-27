@@ -1,0 +1,829 @@
+{
+  "site": {
+    "baseUrl": "https://axxon.github.io",
+    "lastModified": "2026-07-24",
+    "socialImage": {
+      "fr": "/assets/social-card.png",
+      "en": "/assets/social-card-en.png"
+    }
+  },
+  "identity": {
+    "name": "Sébastien Grans",
+    "email": "sebastien.grans@gmail.com",
+    "phone": "06 89 91 89 11",
+    "phoneInternational": "+33 6 89 91 89 11",
+    "github": "https://github.com/Axxon",
+    "linkedin": "https://www.linkedin.com/in/axxonn/",
+    "englishInterview": "https://www.youtube.com/watch?v=aUp7DZ_ZFn4&t=2479s",
+    "website": "https://axxon.github.io/",
+    "photo": "/profil-linkedin.jpeg",
+    "location": {
+      "fr": "Lozère, France",
+      "en": "Lozere, France"
+    },
+    "timezone": "Europe/Paris",
+    "experienceYears": "7",
+    "role": {
+      "fr": "Senior Software Engineer — backend, qualité, architecture et delivery agentique maîtrisé",
+      "en": "Senior Software Engineer — backend, quality, architecture and controlled agentic delivery"
+    },
+    "target": {
+      "fr": "CDI Senior Software Engineer / AI-Native Developer",
+      "en": "Permanent Senior Software Engineer / AI-Native Developer role"
+    },
+    "workMode": {
+      "fr": "Full remote depuis la France ; déménagement possible après la période d'essai",
+      "en": "Remote from France; open to relocation after the probation period"
+    }
+  },
+  "timeline": {
+    "lastSalariedRoleEnded": "2024-06",
+    "transitionStarted": "2024-07",
+    "studiStarted": "2024-07",
+    "heaventsStarted": "2025-12",
+    "noExcuseCreated": "2026-07",
+    "availabilityConfirmed": false,
+    "heaventsOutsideWorkConfirmed": true
+  },
+  "metrics": {
+    "heavents": {
+      "phpunitInventoryDate": "2026-07-16",
+      "phpunitDeclaredTests": 2189,
+      "phpunitTestFiles": 401,
+      "phpunitNamedMethods": 1687,
+      "phpunitAttributedMethods": 502,
+      "phpunitInventoryScope": "gitea/main-static-inventory",
+      "playwrightPassed": 683,
+      "playwrightFailed": 0,
+      "openApiPaths": 483,
+      "openApiOperations": 546,
+      "codeMeasurementDate": "2026-07-08",
+      "vpsContainerObservationDate": "2026-07-21",
+      "vpsRunningContainers": 37,
+      "vpsDemoContainers": 11,
+      "vpsPreprodContainers": 11,
+      "vpsSharedPlatformContainers": 15,
+      "productLines": 274225,
+      "testLines": 130623,
+      "commits": 3320
+    }
+  },
+  "skills": [
+    {
+      "id": "architecture",
+      "title": {
+        "fr": "Développement agentique et architecture pragmatique",
+        "en": "Agentic development and pragmatic architecture"
+      },
+      "home": {
+        "fr": ["développement piloté par les specs et ingénierie du contexte", "Orchestration d’agents", "validation humaine (commits/PR formalisés, pré-revue spécialisée)", "architecture pragmatique — YAGNI", "ontologie et contrats de connaissance versionnés"],
+        "en": ["spec-driven development and context engineering", "Agent orchestration", "human validation (formalized commits/PRs, specialist pre-review)", "pragmatic architecture — YAGNI", "versioned ontology and knowledge contracts"]
+      },
+      "detail": {
+        "fr": ["Context/loop engineering", "MCP et Codex Skills", "architecture pragmatique", "YAGNI", "monolithe modulaire", "services spécialisés", "ontologie fonctionnelle", "contrats de connaissance lisibles par machine", "OOP", "SOLID", "DDD", "CQRS", "Event-Driven Design", "CLI", "queues/workers"],
+        "en": ["Context/loop engineering", "MCP and Codex Skills", "pragmatic architecture", "YAGNI", "modular monolith", "specialized services", "functional ontology", "machine-readable knowledge contracts", "OOP", "SOLID", "GRASP", "DDD", "CQRS", "Event-Driven Design", "CLI", "queues/workers"]
+      }
+    },
+    {
+      "id": "api-data",
+      "title": {
+        "fr": "Contrats API, accès et données",
+        "en": "API contracts, access and data"
+      },
+      "home": {
+        "fr": ["contrats API documentés et testés", "compatibilité ascendante", "contrôle d’accès multi-rôles", "identifiants publics stables", "stockage, cache et traitements asynchrones selon l’usage"],
+        "en": ["documented and tested API contracts", "backward compatibility", "role-based access control", "stable public identifiers", "fit-for-purpose storage, caching and asynchronous processing"]
+      },
+      "detail": {
+        "fr": ["Laravel Sanctum", "Auth0", "SSO", "versioning API", "compatibilité ascendante", "PostgreSQL", "Neo4j", "indexation MySQL", "optimisation de requêtes"],
+        "en": ["Laravel Sanctum", "Auth0", "SSO", "API versioning", "backward compatibility", "PostgreSQL", "Neo4j", "MySQL indexing", "query optimization"]
+      }
+    },
+    {
+      "id": "quality",
+      "title": {
+        "fr": "Qualité et tests",
+        "en": "Quality and testing"
+      },
+      "home": {
+        "fr": ["tests multi-niveaux", "tests challengés par mutations", "validation phasée des specs", "audit agentique de la couverture", "recherche sémantique, puis validation des dépendances, flux et impacts"],
+        "en": ["multi-layer testing", "mutation-challenged tests", "phased specification validation", "agentic coverage audits", "semantic search followed by dependency, data-flow and impact validation"]
+      },
+      "detail": {
+        "fr": ["PHPUnit", "Behat", "Playwright", "TDD", "PHPStan/Larastan", "PHPCS", "Rector", "Pint", "Xdebug", "tests de sécurité", "analyse de vulnérabilités", "challenge des tests par mutation avec Infection", "vérification des comportements attendus à partir des specs", "propositions de tests et audit assistés par LangGraph/LangChain", "recherche sémantique avec CocoIndex", "analyse structurelle et d’impact avec Codebase Memory MCP"],
+        "en": ["PHPUnit", "Behat", "Playwright", "TDD", "PHPStan/Larastan", "PHPCS", "Rector", "Pint", "Xdebug", "security testing", "vulnerability analysis", "mutation-based test challenging with Infection", "expected-behavior verification from specifications", "LangGraph/LangChain-assisted test proposals and audit", "semantic search with CocoIndex", "structural and impact analysis with Codebase Memory MCP"]
+      }
+    },
+    {
+      "id": "production",
+      "title": {
+        "fr": "Delivery et exploitabilité",
+        "en": "Delivery and operability"
+      },
+      "home": {
+        "fr": ["environnements isolés et reproductibles", "validation CI/CD avant déploiement", "déploiement progressif et rollback", "observabilité et diagnostic d’incidents", "gestion des secrets sans exposition"],
+        "en": ["isolated, reproducible environments", "CI/CD validation before deployment", "progressive delivery and rollback", "observability and incident diagnosis", "secret-safe operations"]
+      },
+      "detail": {
+        "fr": ["Docker Compose", "Gitea Actions", "Jenkins", "GitLab CI", "GitHub", "Ansible", "Nginx", "feature flags", "Grafana/Loki", "Sentry/CloudWatch", "monitoring", "rollback", "astreinte", "diagnostic d’incidents", "environnement multi-région", "Kubernetes/k3s en exploration"],
+        "en": ["Docker Compose", "Gitea Actions", "Jenkins", "GitLab CI", "GitHub", "Ansible", "Nginx", "feature flags", "Grafana/Loki", "Sentry/CloudWatch", "monitoring", "rollback", "on-call rotation", "incident diagnosis", "multi-region environment", "Kubernetes/k3s exploration"]
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "id": "sonomundi",
+      "url": "https://demo.electronic.sonomundi.com/",
+      "title": {
+        "fr": "Sonomundi — maîtriser un delivery agentique de bout en bout",
+        "en": "Sonomundi — controlling agentic delivery end to end"
+      },
+      "context": {
+        "fr": "Produit événementiel et musical développé seul : cœur monolithique Laravel/Vue, complété par des services Python spécialisés.",
+        "en": "A solo-built event and music product: a Laravel/Vue monolithic core complemented by specialized Python services."
+      },
+      "action": {
+        "fr": "Chaque changement est cadré par une spec, isolé par branche/worktree, analysé pour ses impacts, testé puis revu avant intégration.",
+        "en": "Each change is framed by a specification, isolated by branch/worktree, assessed for impact, tested and reviewed before integration."
+      },
+      "result": {
+        "fr": "Workflow traçable et reproductible appliqué à un produit démontrable, sans auto-merge et avec décision d’intégration humaine.",
+        "en": "A traceable, reproducible workflow applied to a demonstrable product, with no auto-merge and human integration decisions."
+      }
+    },
+    {
+      "id": "evina",
+      "title": {
+        "fr": "Evina — livrer et faire monter en qualité des services critiques",
+        "en": "Evina — delivering and raising quality across critical services"
+      },
+      "context": {
+        "fr": "Services FinTech et cybersécurité à fort trafic.",
+        "en": "High-traffic FinTech and cybersecurity services."
+      },
+      "action": {
+        "fr": "Implémentation des fonctionnalités demandées, amélioration transversale de la qualité du code et montées de versions PHP/framework sur l’ensemble des services, en plus de l’optimisation MySQL puis Redis des données de fraude.",
+        "en": "Delivered requested features, improved code quality across the service portfolio and upgraded PHP/framework versions throughout, alongside MySQL and Redis optimization of fraud data."
+      },
+      "result": {
+        "fr": "Services plus maintenables et à jour, fonctionnalités métier livrées, baisse de charge MySQL et stabilité de production renforcée.",
+        "en": "More maintainable and up-to-date services, delivered business features, lower MySQL load and stronger production stability."
+      }
+    },
+    {
+      "id": "diversity",
+      "title": {
+        "fr": "Des métiers différents, une même exigence de delivery",
+        "en": "Different domains, the same delivery standard"
+      },
+      "context": {
+        "fr": "FinTech, cybersécurité, retraite, CRM RH, intégrations API, optimisation et événementiel.",
+        "en": "FinTech, cybersecurity, retirement services, HR CRM, API integrations, optimization and events."
+      },
+      "action": {
+        "fr": "Dans chaque contexte : comprendre le besoin, reprendre l’existant, livrer les fonctionnalités attendues et renforcer tests, lisibilité, documentation et exploitabilité.",
+        "en": "In each context: understand the need, work with the existing system, deliver the expected features, and strengthen tests, readability, documentation and operability."
+      },
+      "result": {
+        "fr": "Une capacité d’adaptation fondée sur des pratiques transférables, au-delà d’un framework ou d’un secteur.",
+        "en": "Adaptability grounded in transferable engineering practices, beyond any single framework or industry."
+      }
+    }
+  ],
+  "experiences": [
+    {
+      "id": "evina",
+      "company": "Evina",
+      "url": "https://www.evina.com/",
+      "role": {
+        "fr": "Développeur back-end senior",
+        "en": "Senior back-end developer"
+      },
+      "dates": {
+        "fr": "Juin 2022 – juin 2024 (licenciement économique) · 2 ans · CDI · Paris · Full remote",
+        "en": "June 2022 – June 2024 (economic redundancy) · 2 years · Permanent contract · Paris · Fully remote"
+      },
+      "started": "2022-06",
+      "ended": "2024-06",
+      "endReason": {
+        "fr": "Poste supprimé dans le cadre d’un licenciement économique",
+        "en": "Position eliminated in a redundancy"
+      },
+      "context": {
+        "fr": "FinTech, cybersécurité et paiements mobiles",
+        "en": "FinTech, cybersecurity and mobile payments"
+      },
+      "home": {
+        "fr": [
+          "Fonctionnalités demandées livrées sur des services Laravel critiques, APIs et traitements asynchrones.",
+          "Montée en qualité du code et montées de versions PHP/framework sur l’ensemble des services.",
+          "Migration progressive MySQL vers Redis avec suivi et rollback.",
+          "Auth0/Sanctum, observabilité, astreinte et revues de code."
+        ],
+        "en": [
+          "Requested features delivered across critical Laravel services, APIs and asynchronous processing.",
+          "Code-quality improvements and PHP/framework upgrades across the full service portfolio.",
+          "Progressive MySQL-to-Redis migration with monitoring and rollback.",
+          "Auth0/Sanctum, observability, on-call rotation and code reviews."
+        ]
+      },
+      "detail": {
+        "fr": [
+          "Contribution back-end sur des services critiques à fort trafic liés aux paiements mobiles, à la cybersécurité et à des produits métier SaaS.",
+          "Implémentation et livraison des fonctionnalités demandées, de la clarification du besoin au suivi après mise en production, sur l’ensemble du portefeuille de services.",
+          "Montée en qualité et en maintenabilité du code par le refactoring du cœur applicatif, les revues quotidiennes, les tests automatisés, l’analyse statique et les contrôles de sécurité.",
+          "Montées de versions PHP et des frameworks sur l’ensemble des services, avec Rector, gestion des dépendances, traitement des incompatibilités et contrôle de non-régression.",
+          "Indexation MySQL puis migration progressive d’entités très sollicitées vers Redis, déployée par périmètres avec surveillance avant, pendant et après mise en production, et possibilité de rollback.",
+          "Prise en compte du versioning et de la compatibilité des APIs, de la continuité de service et de la non-perte de données.",
+          "Intégration Auth0 et Laravel Sanctum sur trois applications Laravel et Dundas pour unifier les procédures de connexion multi-applications.",
+          "Mise en place et suivi d’indicateurs via ELK, Grafana et les logs : codes HTTP, erreurs 4xx/5xx, temps de réponse, charge MySQL, incidents et stabilité des déploiements.",
+          "Astreinte de production pendant un an, revues de code quotidiennes, documentation Notion, pédagogie Git et ateliers techniques en anglais."
+        ],
+        "en": [
+          "Back-end contribution to critical high-traffic services for mobile payments, cybersecurity and business SaaS products.",
+          "Implemented and delivered requested features, from requirement clarification through post-release monitoring, across the full service portfolio.",
+          "Raised code quality and maintainability through core refactoring, daily reviews, automated tests, static analysis and security checks.",
+          "Upgraded PHP and framework versions across all services using Rector, dependency management, compatibility fixes and regression controls.",
+          "MySQL indexing followed by a progressive migration of heavily used entities to Redis, deployed by scope with pre-, during- and post-release monitoring and rollback capability.",
+          "Handled API versioning and compatibility, service continuity and no-data-loss constraints.",
+          "Integrated Auth0 and Laravel Sanctum across three Laravel applications and Dundas to unify multi-application login procedures.",
+          "Set up and tracked indicators through ELK, Grafana and logs: HTTP codes, 4xx/5xx errors, response times, MySQL load, incidents and deployment stability.",
+          "One year of production on-call rotation, daily code reviews, Notion documentation, Git mentoring and technical workshops in English."
+        ]
+      },
+      "technologies": ["PHP", "Laravel", "Redis", "MySQL", "Auth0", "Sanctum", "Docker", "ELK", "Grafana", "Jenkins", "Kubernetes"]
+    },
+    {
+      "id": "sapiendo",
+      "company": "Sapiendo",
+      "url": "https://www.sapiendo-retraite.fr/",
+      "role": {
+        "fr": "Développeur back-end / DevOps",
+        "en": "Back-end developer / DevOps"
+      },
+      "dates": {
+        "fr": "Février 2021 – mai 2022 · 1 an 4 mois · CDI puis freelance · Paris · Full remote",
+        "en": "February 2021 – May 2022 · 1 year 4 months · Permanent contract, then freelance · Paris · Fully remote"
+      },
+      "started": "2021-02",
+      "ended": "2022-05",
+      "employmentType": {
+        "fr": "CDI puis freelance",
+        "en": "Permanent contract, then freelance"
+      },
+      "context": {
+        "fr": "Services retraite et automatisation métier",
+        "en": "Retirement services and business automation"
+      },
+      "home": {
+        "fr": [
+          "API Symfony/API Platform de conversion PDF vers XML.",
+          "Scénario JWT/PDF/XML, tests, documentation et coordination prestataire.",
+          "Docker, CI/CD, CloudWatch/Sentry et évolutions Laravel métier."
+        ],
+        "en": [
+          "Symfony/API Platform API converting PDF documents to XML.",
+          "JWT/PDF/XML flow, tests, documentation and vendor coordination.",
+          "Docker, CI/CD, CloudWatch/Sentry and Laravel business features."
+        ]
+      },
+      "detail": {
+        "fr": [
+          "Conception et livraison de Super Boris, API Symfony 5.4 LTS/API Platform sécurisée par JWT pour convertir des relevés RIS PDF en XML.",
+          "Modélisation des ressources, opérations d’upload/download/callback, création du microservice parseur et de son client, scénario de test de bout en bout et diagrammes de séquence.",
+          "Développements Laravel sur les algorithmes retraite et clarification régulière des besoins avec le Product Owner.",
+          "GitHub/GitLab CI/CD, Docker, variables multi-environnements, contrôles Postman/Newman, AWS CloudWatch et Sentry.",
+          "Autonomie avec le CTO, accompagnement Git/Laravel d’un développeur interne et revue quotidienne des PR."
+        ],
+        "en": [
+          "Designed and delivered Super Boris, a JWT-secured Symfony 5.4 LTS/API Platform API converting RIS PDF statements to XML.",
+          "Modeled resources and upload/download/callback operations, built the parser microservice and client, end-to-end test scenario and sequence diagrams.",
+          "Developed Laravel retirement algorithms and regularly clarified requirements with the Product Owner.",
+          "GitHub/GitLab CI/CD, Docker, multi-environment variables, Postman/Newman checks, AWS CloudWatch and Sentry.",
+          "Worked autonomously with the CTO, mentored an internal developer on Git/Laravel and reviewed pull requests daily."
+        ]
+      },
+      "technologies": ["PHP 8", "Laravel", "Symfony 5.4", "API Platform", "Docker", "GitLab CI", "AWS", "CloudWatch", "Sentry"]
+    },
+    {
+      "id": "blachere",
+      "company": "Groupe Blachère",
+      "url": "https://www.groupeblacherefranchise.com/",
+      "role": {
+        "fr": "Ingénieur d’études et de développement",
+        "en": "Software development engineer"
+      },
+      "dates": {
+        "fr": "Décembre 2020 – janvier 2021 · 2 mois · CDD · Châteaurenard · Hybride",
+        "en": "December 2020 – January 2021 · 2 months · Fixed-term contract · Châteaurenard · Hybrid"
+      },
+      "started": "2020-12",
+      "ended": "2021-01",
+      "durationMonths": 2,
+      "employmentType": {
+        "fr": "CDD",
+        "en": "Fixed-term contract"
+      },
+      "context": {
+        "fr": "Logistique et optimisation",
+        "en": "Logistics and optimization"
+      },
+      "home": {
+        "fr": [
+          "Microservice Symfony pour modéliser des contraintes de stockage.",
+          "Algorithme de placement orienté objet et testé.",
+          "Interface d’ajustement et visualisation 2D."
+        ],
+        "en": [
+          "Symfony microservice modeling storage constraints.",
+          "Tested object-oriented placement algorithm.",
+          "Adjustment interface and 2D visualization."
+        ]
+      },
+      "detail": {
+        "fr": [
+          "Première version utilisable d’un microservice Symfony avec interface, API et Docker pour un outil logistique de stockage de produits frais.",
+          "Recueil du besoin, audit de l’architecture et modélisation des dimensions, volumes, horaires, emplacements et disponibilités.",
+          "Algorithme de placement/optimisation orienté objet dans un contexte DDD, tests unitaires et PHPStan.",
+          "Formulaires Symfony pour ajuster les propositions et visualisation 2D pour faciliter leur lecture."
+        ],
+        "en": [
+          "Delivered a first usable Symfony microservice with interface, API and Docker for a fresh-product storage logistics tool.",
+          "Collected user needs, audited the architecture and modeled dimensions, volumes, time windows, locations and availability.",
+          "Object-oriented placement and optimization algorithm in a DDD context, with unit tests and PHPStan.",
+          "Symfony forms to adjust suggestions and 2D visualization to make them easier to understand."
+        ]
+      },
+      "technologies": ["PHP", "Symfony 5", "PHPUnit", "PHPStan", "Docker"]
+    },
+    {
+      "id": "sensiolabs",
+      "company": "SensioLabs",
+      "url": "https://sensiolabs.com/",
+      "role": {
+        "fr": "Développeur back-end",
+        "en": "Back-end developer"
+      },
+      "dates": {
+        "fr": "Avril – septembre 2018 · 6 mois · CDI · Paris · Full remote",
+        "en": "April – September 2018 · 6 months · Permanent contract · Paris · Fully remote"
+      },
+      "started": "2018-04",
+      "ended": "2018-09",
+      "durationMonths": 6,
+      "context": {
+        "fr": "Écosystème Symfony et formation",
+        "en": "Symfony ecosystem and training"
+      },
+      "home": {
+        "fr": [
+          "Site événementiel interne Symfony/Twig.",
+          "Endpoints et agrégation d’APIs internes.",
+          "Traitements RabbitMQ, tests Behat/PHPUnit et CI Docker."
+        ],
+        "en": [
+          "Internal Symfony/Twig event website.",
+          "Endpoints and aggregation of internal APIs.",
+          "RabbitMQ processing, Behat/PHPUnit tests and Docker CI."
+        ]
+      },
+      "detail": {
+        "fr": [
+          "Développement d’un site événementiel interne en Symfony et Twig.",
+          "Endpoints API pour Alumni et croisement de données issues de plusieurs APIs internes pour exposer des synthèses.",
+          "Intégrations Microsoft Graph, Yammer et Bing via Guzzle, commandes console, Redis temporaire, JWT et fixtures Alice.",
+          "Asynchronisme RabbitMQ/Swarrot, tests Behat/PHPUnit et CI Docker/Travis."
+        ],
+        "en": [
+          "Built an internal event website with Symfony and Twig.",
+          "Added Alumni API endpoints and combined data from several internal APIs to expose summaries.",
+          "Integrated Microsoft Graph, Yammer and Bing through Guzzle, console commands, temporary Redis storage, JWT and Alice fixtures.",
+          "RabbitMQ/Swarrot asynchronous processing, Behat/PHPUnit tests and Docker/Travis CI."
+        ]
+      },
+      "technologies": ["Symfony", "API Platform", "RabbitMQ", "Redis", "Guzzle", "Behat", "PHPUnit", "Docker"]
+    },
+    {
+      "id": "norsys",
+      "company": "Norsys",
+      "url": "https://www.norsys.fr/",
+      "role": {
+        "fr": "Développeur back-end",
+        "en": "Back-end developer"
+      },
+      "dates": {
+        "fr": "2016 – 2018 · 2 ans · CDI · Lyon et périphérie · Sur site / chez les clients",
+        "en": "2016 – 2018 · 2 years · Permanent contract · Lyon area · On site / client sites"
+      },
+      "started": "2016",
+      "ended": "2018",
+      "datePrecision": "year",
+      "context": {
+        "fr": "ESN, projets grands comptes",
+        "en": "IT services, enterprise projects"
+      },
+      "home": {
+        "fr": [
+          "Accompagnement de deux développeurs juniors par pair programming et revues de code.",
+          "Architecture Symfony, découpage, revues et optimisation Doctrine.",
+          "Missions Franprix, Decathlon et Fiducial."
+        ],
+        "en": [
+          "Supported two junior developers through pair programming and code reviews.",
+          "Symfony architecture, feature breakdown, reviews and Doctrine optimization.",
+          "Assignments for Franprix, Decathlon and Fiducial."
+        ]
+      },
+      "detail": {
+        "fr": [
+          "Accompagnement de deux développeurs juniors par pair programming, transmission de connaissances et revues de code sur un CRM RH Franprix en Symfony.",
+          "Appui architecture, Design Patterns, choix techniques, découpage, optimisation Symfony/Doctrine, résolution de bugs et revue de code.",
+          "Mission Decathlon : registre LDAP orienté objet et formulaires dynamiques en Symfony/Twig.",
+          "Mission Fiducial : outil interne de suivi des rondes d’agents de sécurité en Symfony/Twig."
+        ],
+        "en": [
+          "Supported two junior developers through pair programming, knowledge sharing and code reviews on a Symfony HR CRM for Franprix.",
+          "Architecture support, Design Patterns, technical choices, feature breakdown, Symfony/Doctrine optimization, bug fixing and code review.",
+          "Decathlon assignment: object-oriented LDAP registry and dynamic Symfony/Twig forms.",
+          "Fiducial assignment: internal Symfony/Twig patrol tracking tool for security agents."
+        ]
+      },
+      "technologies": ["Symfony 3", "Doctrine", "PostgreSQL", "Twig", "Webpack", "Docker", "Atoum"]
+    }
+  ],
+  "otherExperiences": [
+    {
+      "company": "Activ’Company",
+      "url": "https://activcompany.com/",
+      "role": {"fr": "Développeur web", "en": "Web developer"},
+      "dates": {"fr": "Décembre 2013 – janvier 2015 · 1 an 2 mois · Alternance · Paris · Sur site", "en": "December 2013 – January 2015 · 1 year 2 months · Apprenticeship · Paris · On-site"},
+      "started": "2013-12",
+      "ended": "2015-01",
+      "durationMonths": 14,
+      "summary": {
+        "fr": "ERP, sites vitrines et réseau social professionnel Symfony2 ; migration d’entités Doctrine vers MariaDB.",
+        "en": "ERP, websites and Symfony2 professional social network; Doctrine entity migration to MariaDB."
+      }
+    },
+    {
+      "company": "YouMiam",
+      "role": {"fr": "Développeur web", "en": "Web developer"},
+      "dates": {"fr": "Décembre 2013 · 1 mois · Alternance · avant Activ’Company", "en": "December 2013 · 1 month · Apprenticeship · before Activ’Company"},
+      "started": "2013-12",
+      "durationMonths": 1,
+      "summary": {
+        "fr": "Contribution Symfony/front à un réseau social culinaire, Facebook Login et requêtes Elasticsearch.",
+        "en": "Symfony/front-end contribution to a culinary social network, Facebook Login and Elasticsearch queries."
+      }
+    },
+    {
+      "company": "E-testing",
+      "dates": {"fr": "Indépendant", "en": "Freelance"},
+      "summary": {
+        "fr": "Création et relecture de questionnaires techniques PHP, vérifiés sous plusieurs versions via Docker.",
+        "en": "Created and reviewed PHP technical questionnaires, verified across versions with Docker."
+      }
+    },
+    {
+      "company": "Indexx",
+      "dates": {"fr": "Indépendant", "en": "Freelance"},
+      "summary": {
+        "fr": "Mission courte avec contributions ciblées OAuth, Twilio et NestJS.",
+        "en": "Short assignment with targeted OAuth, Twilio and NestJS contributions."
+      }
+    }
+  ],
+  "projects": [
+    {
+      "url": "https://no-excuse.pro/",
+      "created": "2026-07",
+      "showOnCv": false,
+      "title": {"fr": "no-excuse — recrutement responsable assisté par IA", "en": "no-excuse — responsible AI-assisted recruitment"},
+      "summary": {
+        "fr": "Première version fonctionnelle conçue et mise en ligne en deux jours : prototype open source Laravel/Vue avec ingestion de CV, pseudonymisation locale, scoring expliqué et décision RH humaine.",
+        "en": "First functional version designed and published in two days: an open-source Laravel/Vue prototype with resume ingestion, local pseudonymization, explained scoring and human HR decisions."
+      }
+    },
+    {
+      "title": {"fr": "Agrégateur RSS", "en": "RSS aggregator"},
+      "summary": {
+        "fr": "Microservices orientés DDD/TDD, présentés comme POC de recrutement à Norsys puis arrêtés après arbitrage de périmètre et de maintenance.",
+        "en": "DDD/TDD-oriented microservices presented as a recruitment POC to Norsys, then stopped after a scope and maintenance trade-off."
+      }
+    },
+    {
+      "title": {"fr": "Métadonnées musicales", "en": "Music metadata"},
+      "summary": {
+        "fr": "Prototype de datawarehouse, crawler Discogs et outils de veille sur artistes, labels, extraits et streams.",
+        "en": "Data-warehouse prototype, Discogs crawler and monitoring tools for artists, labels, excerpts and streams."
+      }
+    },
+    {
+      "title": {"fr": "Exploration Eurorack et musique modulaire", "en": "Eurorack and modular-music exploration"},
+      "summary": {
+        "fr": "Progression musicale en 2025 et prototype Bolt.new consacré à l’Eurorack, arrêté après avoir jugé le marché trop étroit ; cet arbitrage a précédé le recentrage sur Sonomundi.",
+        "en": "Musical progress in 2025 and a Bolt.new Eurorack prototype, stopped after judging the market too narrow; this trade-off preceded the focus on Sonomundi."
+      }
+    },
+    {
+      "title": {"fr": "Recherche d’emploi instrumentée", "en": "Instrumented job search"},
+      "showOnCv": false,
+      "summary": {
+        "fr": "Au 20 juillet 2026 : 844 offres consolidées, dossiers ciblés, relances suivies et indexation sémantique locale ; l’automatisation prépare et vérifie sans candidater à ma place.",
+        "en": "As of July 20, 2026: 844 consolidated roles, targeted application packs, tracked follow-ups and local semantic indexing; automation prepares and checks without applying on my behalf."
+      }
+    }
+  ],
+  "education": [
+    {
+      "year": {"fr": "Juillet 2024–2025", "en": "July 2024–2025"},
+      "degree": {"fr": "Formation Chef de projet événementiel — parcours non finalisé", "en": "Event Project Manager training — program not completed"},
+      "school": {"fr": "Studi · 1 000 heures comptabilisées sur l’attestation, hors travail personnel · absence de stage possible dans la région", "en": "Studi · 1,000 hours recorded on the attendance certificate, excluding additional personal study · no internship opportunity available in the region"},
+      "started": "2024-07",
+      "completed": false,
+      "hoursAttested": 1000,
+      "reasonNotCompleted": {"fr": "Absence de stage possible dans la région", "en": "No internship opportunity available in the region"}
+    },
+    {
+      "year": "2012",
+      "degree": {"fr": "DEUST Webmaster", "en": "DEUST Webmaster"},
+      "school": {"fr": "Université de Limoges · à distance", "en": "University of Limoges · remote"}
+    },
+    {
+      "year": "2008",
+      "degree": {"fr": "Diplôme de 3e cycle en piano jazz", "en": "Third-cycle diploma in jazz piano"},
+      "school": {"fr": "Conservatoire d’Annecy", "en": "Annecy Conservatory"}
+    },
+    {
+      "year": "2005",
+      "degree": {"fr": "Bac technologique STT", "en": "Technical baccalaureate STT"},
+      "school": {"fr": "Spécialité informatique, option musique · Lycée Baudelaire Annecy", "en": "IT specialization, music option · Lycee Baudelaire Annecy"}
+    }
+  ],
+  "heavents": {
+    "demo": "https://demo.electronic.sonomundi.com/",
+    "technicalDocs": {
+      "fr": "/heavents-recruiter-pack/architecture-anonymisee.html",
+      "en": "/heavents-recruiter-pack/architecture-anonymisee-en.html"
+    },
+    "workflowGraphic": {
+      "locales": ["fr"],
+      "src": "/heavents-recruiter-pack/captures/11-stack-ia-produit-cicd.png",
+      "animatedSrc": "/heavents-recruiter-pack/captures/11-stack-ia-produit-cicd.gif",
+      "width": 1600,
+      "height": 2000,
+      "alt": "Infographie reliant huit étapes du workflow IA et delivery à huit dimensions du produit Sonomundi.",
+      "caption": "Le workflow IA n’est pas présenté comme une fin en soi : chaque étape est reliée à une capacité produit, de l’ownership à la livraison reproductible.",
+      "fullSizeLabel": "Ouvrir l’infographie en grand",
+      "animatedLabel": "Voir la version animée (GIF)",
+      "transcriptLabel": "Lire la version textuelle de l’infographie",
+      "transcriptIntro": "La colonne « Stack IA / delivery » est mise en regard de la colonne « Produit Sonomundi » selon huit correspondances :",
+      "mappings": [
+        "Agent IA de code → ownership produit.",
+        "Context engineering → back-end senior.",
+        "Orchestration d’agents → front-end applicatif.",
+        "Debug dans un navigateur réel → qualité logicielle.",
+        "Validation automatisée → architecture modulaire.",
+        "Auto-review et gates → media et discovery.",
+        "CI/CD et publication contrôlée → API et documentation.",
+        "Reporting et observabilité → organisation remote-ready et delivery reproductible."
+      ]
+    },
+    "gallery": [
+      {
+        "src": "/heavents-recruiter-pack/captures/01-events-hub.png",
+        "width": 1280,
+        "height": 720,
+        "alt": {"fr": "Hub des événements dans Sonomundi", "en": "Sonomundi events hub"},
+        "caption": {"fr": "Hub des événements", "en": "Events hub"}
+      },
+      {
+        "src": "/heavents-recruiter-pack/captures/02-event-open.png",
+        "width": 1280,
+        "height": 720,
+        "alt": {"fr": "Fiche d’un événement ouverte dans Sonomundi", "en": "An event page opened in Sonomundi"},
+        "caption": {"fr": "Consultation d’un événement", "en": "Opening an event"}
+      },
+      {
+        "src": "/heavents-recruiter-pack/captures/03-artist-open.png",
+        "width": 1280,
+        "height": 720,
+        "alt": {"fr": "Fiche artiste et relations musicales dans Sonomundi", "en": "Artist page and music relationships in Sonomundi"},
+        "caption": {"fr": "Fiche artiste et relations musicales", "en": "Artist page and music relationships"}
+      },
+      {
+        "src": "/heavents-recruiter-pack/captures/10-architecture-anonymisee.png",
+        "width": 1672,
+        "height": 941,
+        "alt": {"fr": "Schéma anonymisé de l’architecture Sonomundi", "en": "Anonymized Sonomundi architecture diagram"},
+        "caption": {"fr": "Architecture anonymisée", "en": "Anonymized architecture"}
+      }
+    ]
+  },
+  "content": {
+    "fr": {
+      "languageName": "Français",
+      "languageSwitch": "English",
+      "skipLink": "Aller au contenu",
+      "navLabel": "Navigation principale",
+      "nav": {"home": "Accueil", "proofs": "Preuves", "experience": "Expérience", "heavents": "Sonomundi", "cv": "CV détaillé", "contact": "Contact"},
+      "homeMeta": {
+        "title": "Sébastien Grans — Senior Software Engineer, qualité et delivery agentique",
+        "description": "Senior Software Engineer orienté produit, qualité et production, fort d’expériences métier variées et d’une pratique concrète du delivery agentique maîtrisé."
+      },
+      "hero": {
+        "eyebrow": "Expérience produit · Qualité logicielle · Delivery agentique maîtrisé",
+        "value": "Fort d’expériences dans des produits et domaines métier variés, je transforme des besoins complexes en logiciels fiables et maintenables. J’étends aujourd’hui cette pratique avec des workflows de développement agentiques fondés sur les spécifications, les tests et la validation humaine.",
+        "technical": "PHP/Laravel/Symfony, APIs, production, ontologie fonctionnelle, Paperclip adapté, agents bornés, CI/CD et décision humaine.",
+        "experience": "7 ans cumulés d’expérience professionnelle",
+        "international": "Ouvert aux équipes étrangères et au travail en anglais",
+        "primaryCta": "Télécharger le CV · 1 page",
+        "secondaryCta": "Voir l’étude de cas Sonomundi",
+        "tertiaryCta": "Contacter Sébastien"
+      },
+      "sections": {
+        "skills": {"eyebrow": "Socle technique", "title": "Compétences principales", "intro": "Un socle d’ingénierie logicielle construit dans des contextes métier variés, aujourd’hui prolongé par l’orchestration d’agents et des contrats de connaissance versionnés."},
+        "proofs": {"eyebrow": "En moins de 30 secondes", "title": "Trois preuves complémentaires", "intro": "La diversité du parcours prouve l’adaptation, Evina l’expérience de production critique et Sonomundi la direction agentique actuelle."},
+        "trajectory": {
+          "eyebrow": "Trajectoire",
+          "title": "De l’autonomie technique au leadership d’équipe",
+          "intro": "La formation de Responsable de projets événementiels répondait à un objectif plus large que le seul secteur de l’événementiel. Ses trois blocs — contribuer à la stratégie, concevoir le projet puis le piloter — correspondaient aux dimensions commerciales, stratégiques et collectives que je voulais ajouter à mon socle technique.",
+          "points": [
+            "Mon attestation comptabilise 1 000 heures de formation. Mon investissement réel, avec le travail personnel et l’approfondissement des contenus, a probablement été supérieur ; je conserve néanmoins 1 000 heures comme seul volume vérifiable dans mes documents professionnels.",
+            "En entreprise, j’ai surtout travaillé avec une forte autonomie. Mon rôle de référent technique m’a amené à expliquer des choix, relire du code et accompagner des développeurs, mais je revendique peu d’expérience de management hiérarchique ou de direction formelle d’équipe.",
+            "J’ai transposé les concepts étudiés dans Sonomundi : cadrage du besoin et du MVP, priorisation, spécifications, planification, gestion des risques, répartition des rôles, indicateurs de readiness, reporting, collecte de feedback et amélioration continue.",
+            "Avec Sonomundi, je pratique aujourd’hui une autre forme de coordination : objectifs et spécifications explicites, répartition du travail entre agents spécialisés, contextes et responsabilités bornés, suivi des résultats, arbitrage et validation finale.",
+            "Une équipe d’agents ne remplace pas une équipe humaine. Cette pratique renforce néanmoins des compétences transférables de cadrage, délégation, feedback, contrôle qualité et décision que je souhaite mettre au service d’un collectif."
+          ],
+          "outcome": "Mon objectif est d’évoluer dans un rôle où je peux continuer à contribuer techniquement tout en aidant une équipe à comprendre les priorités, prendre de bonnes décisions et livrer ensemble.",
+          "sourceUrl": "https://www.studi.com/fr/formation/marketing/bachelor-responsable-de-projets-evenementiels/pdf",
+          "sourceLabel": "Consulter le programme officiel Studi"
+        },
+        "experience": {"eyebrow": "Parcours", "title": "Expérience professionnelle", "intro": "Version condensée. Les responsabilités et expériences antérieures figurent dans le CV détaillé.", "detailsLink": "Consulter le CV détaillé"},
+        "heavents": {"eyebrow": "Side project personnel · expérience non salariée", "title": "Sonomundi, un projet de long terme", "intro": "Produit événementiel et musical Laravel/Vue développé seul depuis décembre 2025. Je le fais évoluer sans calendrier de sortie pressant, avec l’objectif de publier progressivement un produit suffisamment abouti.", "points": ["Parcours event, artist et track, API documentée et authentification multi-rôles.", "Ontologie versionnée reliant entités métier, relations, invariants, capacités fonctionnelles, surfaces, rôles et preuves de test.", "Inventaire statique de main au 16 juillet 2026 : 2 189 tests PHPUnit déclarés dans 401 fichiers PHP ; 3 320 commits.", "Développement hors temps de travail et suspendable : Sonomundi n’empiète pas sur ma disponibilité complète pour un employeur."], "ai": "J’ai adapté Paperclip comme plan de contrôle d’un workflow multi-agents : lots issus de specs, responsabilités spécialisées, tâches bornées, mémoire documentaire, branches et worktrees isolés, validation Docker/CI et pré-revue des pull requests. Aucun auto-merge : l’intégration et la décision technique restent humaines.", "link": "Lire l’étude de cas Sonomundi"},
+        "contact": {"eyebrow": "Échange", "title": "Parlons de développement agentique et d’architecture logicielle", "intro": "Ouvert aux équipes françaises et internationales, en français ou en anglais. Pour un poste Senior Software Engineer ou AI-Native Developer, le moyen le plus direct reste l’email.", "cta": "Écrire à Sébastien"}
+      },
+      "cvMeta": {
+        "title": "CV détaillé — Sébastien Grans, Senior Software Engineer",
+        "description": "CV détaillé de Sébastien Grans : développement agentique, architecture logicielle, APIs, qualité, production et delivery AI-native."
+      },
+      "cv": {
+        "eyebrow": "CV détaillé",
+        "title": "Parcours et livrables",
+        "intro": "Senior Software Engineer avec 7 ans cumulés d’expérience professionnelle, spécialisé dans les workflows de développement agentiques maîtrisés et appuyé sur un socle backend, architecture, qualité et production.",
+        "timelineNote": "Dernier emploi salarié terminé en juin 2024. Période de transition professionnelle depuis juillet 2024 ; développement de Sonomundi à partir de décembre 2025 comme produit personnel non salarié.",
+        "downloadsTitle": "Téléchargements",
+        "downloads": {"short": "CV 1 page · recommandé", "detailed": "CV détaillé PDF", "ats": "Version ATS PDF"},
+        "skillsTitle": "Compétences détaillées",
+        "experienceTitle": "Expériences professionnelles",
+        "otherTitle": "Autres expériences",
+        "projectsTitle": "Projets personnels",
+        "educationTitle": "Formation",
+        "languagesTitle": "Langues",
+        "languages": "Français natif · anglais professionnel courant à l’oral et à l’écrit ; niveau C1 estimé, sans certification officielle.",
+        "englishProof": "Interview publique menée en anglais",
+        "heaventsTitle": "Expérience récente non salariée",
+        "heaventsText": "Sonomundi est un side project personnel Laravel/Vue démarré en décembre 2025 et destiné à une sortie progressive lorsqu’il sera suffisamment abouti. Sans calendrier pressant, il reste hors temps de travail, peut être mis en pause et n’affecte pas ma disponibilité complète pour un employeur.",
+        "caseLink": "Voir l’étude de cas et ses limites"
+      },
+      "caseMeta": {
+        "title": "Étude de cas Sonomundi — produit personnel Laravel/Vue",
+        "description": "Architecture, rôles, données, tests, CI/CD, observabilité, workflow IA et limites du produit personnel Sonomundi."
+      },
+      "case": {
+        "eyebrow": "Étude de cas · side project personnel",
+        "title": "Sonomundi : construire progressivement un produit abouti",
+        "intro": "Side project personnel non salarié démarré en décembre 2025, Sonomundi prolonge une découverte du secteur de l’événementiel commencée avec une formation de Chef de projet événementiel chez Studi en juillet 2024. Je construis d’abord un produit stable dont l’exploitation courante pourra être largement automatisée, sans m’imposer de date de sortie. Voici précisément où j’en suis aujourd’hui.",
+        "statusTitle": "Où en est Sonomundi aujourd’hui ?",
+        "statuses": [
+          {"label": "Ce qui fonctionne aujourd’hui", "text": "La démo permet de parcourir des événements, des artistes et des morceaux. L’application gère plusieurs rôles, expose une API documentée et dispose de tests back-end et UI."},
+          {"label": "Ce que je consolide avant une sortie", "text": "Je resserre le périmètre utile et je renforce la préproduction, l’observabilité et l’automatisation du delivery. La publication sera progressive, quand l’ensemble sera suffisamment fiable."},
+          {"label": "Ce qui reste en laboratoire", "text": "Neo4j, k3s local et certains services satellites restent des explorations techniques. Ils ne conditionnent pas la sortie du cœur Laravel/Vue."},
+          {"label": "Ce que je ne revendique pas encore", "text": "Sonomundi n’est pas encore ouvert au public ni exploité à l’échelle commerciale. Je ne présente donc pas de trafic réel, de disponibilité mesurée ou de paiement exploité en conditions réelles."}
+        ],
+        "sections": [
+          {"id": "contexte", "title": "1. Contexte du projet", "paragraphs": ["Sonomundi est un monorepo Laravel/Vue conçu comme un side project personnel de long terme autour de l’événementiel et de la musique. Je veux prendre le temps de le terminer correctement et le publier progressivement lorsqu’il sera suffisamment abouti, sans imposer de calendrier de lancement pressant.", "J’ai commencé en juillet 2024 chez Studi une formation de Responsable de projets événementiels. Mon attestation comptabilise 1 000 heures ; j’estime que le travail personnel et l’approfondissement ont porté l’investissement réel au-delà, mais je ne présente comme vérifiable que le volume attesté. La fiche publique liée correspond au programme en vigueur en juillet 2026 et affiche désormais une durée indicative de 500 heures ; mon attestation reste la source relative au parcours commencé en 2024.", "Le parcours n’a pas débouché sur la certification parce que je n’ai pas trouvé le stage nécessaire. Je vis dans un territoire rural isolé où les opportunités événementielles sont rares, éloignées géographiquement et souvent difficiles à identifier ou à rejoindre sans réseau professionnel local. Après cette recherche infructueuse, j’ai choisi d’investir mon énergie dans la construction de Sonomundi plutôt que de prolonger indéfiniment l’attente d’un stage.", "Le programme couvrait la stratégie et l’étude de faisabilité, le marché et le positionnement, le besoin client, la conception du projet, le budget et les risques, les KPI, le reporting, le feedback, la création d’une équipe projet, la délégation et la communication interne. Cette reprise de formation visait à dépasser une lecture uniquement technique du produit et à apprendre à conduire un projet avec d’autres.", "J’ai ensuite appliqué une partie de ces concepts à Sonomundi : cadrage du MVP, spécifications et planning, priorisation des risques, rôles et responsabilités, indicateurs de readiness, reporting, boucles de feedback et amélioration continue. Cela ne remplace ni le stage absent ni une expérience de management humain, mais fournit une mise en pratique concrète et démontrable.", "Son développement reste hors temps de travail et peut être mis en pause. Il est organisé pour ne pas empiéter sur ma disponibilité complète pour un employeur."]},
+          {"id": "probleme", "title": "2. Problème traité", "paragraphs": ["Le cœur du produit organise la découverte d’événements et la navigation entre événements, artistes et morceaux. Le travail sert aussi à démontrer la capacité à transformer un besoin riche en architecture, contrats, règles d’accès et parcours vérifiables."]},
+          {"id": "fonctionnalites", "title": "3. Fonctionnalités principales", "items": ["Hub d’événements et sélection d’une région.", "Ouverture d’un événement, d’un artiste puis d’un morceau.", "Surfaces publiques, authentifiées et administratives.", "Ressources API, jobs et documentation OpenAPI/Scramble."]},
+          {"id": "architecture", "title": "4. Architecture", "paragraphs": ["Le noyau associe une API Laravel/PHP et une SPA Vue 3/TypeScript. MySQL porte les données principales ; Redis sert au cache, aux files et à la coordination locale. Des services Python/FastAPI existent pour des besoins ciblés. Les frontières sont documentées par migrations, resources, middlewares, jobs, tests et contrats API.", "Au 21 juillet 2026, le VPS exécute 37 conteneurs rattachés à Sonomundi. Ce total décrit deux environnements applicatifs et leur plateforme d’exploitation ; il ne signifie pas que le produit est composé de 37 microservices ni qu’il supporte une charge de production démontrée."], "items": ["11 conteneurs pour la démonstration et 11 pour la préproduction : interface web, API, proxy HTTP, worker, scheduler, temps réel, transcodage audio, MySQL, deux usages Redis et Neo4j.", "15 conteneurs partagés : forge et CI/CD, orchestration d’agents et recherche sémantique du code, observabilité et logs, suivi d’erreurs, tableaux d’exploitation, bases techniques et passerelles d’accès."]},
+          {"id": "stack", "title": "5. Stack", "items": ["PHP 8.2, Laravel 12, Vue 3 et TypeScript.", "MySQL, Redis et Neo4j en exploration graphe/recommandation.", "Python/FastAPI pour des services satellites ciblés.", "Docker, k3s local, OpenAPI/Scramble, PHPUnit et Playwright."]},
+          {"id": "auth", "title": "6. Authentification et rôles", "paragraphs": ["Le périmètre couvre l’authentification multi-rôles et des accès différenciés pour les visiteurs non connectés, le public authentifié, les artistes, les labels et l’administration. Les middlewares et matrices de tests servent à vérifier ces frontières."]},
+          {"id": "ontologie", "title": "7. Ontologie et traçabilité fonctionnelle", "paragraphs": ["Sonomundi possède une ontologie versionnée et lisible par machine. Elle formalise les entités du domaine — comptes, rôles, artistes, labels, sorties, morceaux, événements, lieux, ressources audio, demandes de contenu et preuves — ainsi que leurs relations, invariants, politiques de provenance et règles de visibilité.", "La référence revue du 24 juillet 2026 relie les capacités visibles aux surfaces de l’application, aux six espaces de rôles et aux preuves de test. Elle recense 511 capacités, 113 surfaces de routage et 3 066 cellules capacité-rôle. Les preuves manquantes ou contradictoires restent explicitement à décider ; elles ne sont jamais déduites par similarité ou par un LLM.", "Cette ontologie sert de contrat de connaissance et de gouvernance : elle rend les frontières métier, les droits et les lacunes de couverture auditables par les humains comme par les outils agentiques. Neo4j constitue une exploration distincte pour le graphe et la recommandation ; il n’est pas la source de vérité de l’ontologie."]},
+          {"id": "donnees", "title": "8. Données et performances", "paragraphs": ["MySQL reste la base applicative principale. Redis est utilisé pour le cache, les queues et la coordination locale. Neo4j relève encore de l’expérimentation. Aucune latence de production réelle ni capacité de charge commerciale n’est publiée : ces mesures n’existent pas dans les preuves disponibles."]},
+          {"id": "tests", "title": "9. Tests", "paragraphs": ["L’inventaire statique de gitea/main au 16 juillet 2026 recense 2 189 tests PHPUnit répartis dans 401 fichiers PHP. Il décrit le volume de tests présents dans le dépôt, pas le résultat d’une exécution complète ni un taux de couverture.", "Une matrice Playwright complète cette preuve avec 683 scénarios validés sur cinq profils d’accès. Ces chiffres documentent l’étendue du dispositif de validation, sans prétendre à une couverture universelle ni à une validation en production."]},
+          {"id": "cicd", "title": "10. CI/CD", "paragraphs": ["Les changements sont isolés par branches et worktrees, puis validés avec Docker, Make, tests ciblés et contrôles élargis lorsque les contrats partagés sont touchés. La démo recruteur est figée sur une version dédiée. Le projet conserve une préproduction distincte en amélioration continue."]},
+          {"id": "observabilite", "title": "11. Observabilité", "paragraphs": ["Grafana/Loki et GlitchTip/Sentry font partie des rails techniques explorés. Une observabilité de production mature, des SLO, un historique d’incidents et des mesures de disponibilité réelles ne sont pas démontrés ; ils restent des travaux d’industrialisation."]},
+          {"id": "ia", "title": "12. Utilisation des outils IA", "paragraphs": ["J’ai adapté Paperclip comme plan de contrôle du delivery agentique : les spécifications alimentent des lots attribués à des agents spécialisés, avec contexte ciblé, tâches bornées, mémoire documentaire, branches et worktrees isolés, validations Docker/CI et pré-revue des pull requests. Codex, MCP et LangChain/LangGraph complètent ce dispositif pour l’analyse, l’implémentation, les tests, la documentation et les audits.", "L’ontologie et les contrats versionnés fournissent aux agents un vocabulaire métier et des frontières vérifiables, sans leur déléguer la vérité fonctionnelle. Aucun auto-merge ; le LLM n’est jamais la source de vérité et la responsabilité d’intégration reste la mienne.", "À terme, l’objectif est d’automatiser au maximum les validations, revues de PR, mises à jour documentaires, déploiements et alertes de suivi afin de réduire la maintenance courante et d’éviter les interruptions inutiles."]},
+          {"id": "limites", "title": "13. Limites actuelles", "items": ["Dépôt privé et démonstration conduite par le candidat.", "Aucune date de sortie imposée : la qualité et la pérennité priment sur la vitesse.", "Billing, wallet, settlement, monétisation et audio réel : chantiers séparés ou partiels.", "Observabilité, sauvegardes, secrets et infrastructure à renforcer pour une industrialisation.", "Certaines surfaces avancées restent gelées ou incomplètes."]},
+          {"id": "enseignements", "title": "14. Enseignements", "paragraphs": ["Le principal enseignement est de réduire plus tôt le MVP et de distinguer la preuve technique du volume produit. Les tests, contrats, frontières de modules, migrations et décisions documentées sont plus utiles que les lignes de code ou le nombre de commits. L’IA accélère la production ; elle ne remplace ni le cadrage ni la responsabilité.", "Le pilotage des agents m’oblige à expliciter l’objectif, distribuer des responsabilités, fournir le bon contexte, contrôler les dépendances, donner du feedback et arbitrer les résultats. Ce n’est pas une expérience de management humain, mais un terrain concret pour consolider des pratiques de coordination que je souhaite mettre à profit dans un rôle de contributeur senior ou de lead au service d’une équipe."]},
+          {"id": "demo", "title": "15. Démonstration et captures", "paragraphs": ["Le parcours recruteur montre le hub d’événements, une région, un événement, un artiste et un morceau. Les captures ci-dessous complètent la démo et l’architecture anonymisée. Aucun accès au dépôt ni installation locale n’est demandé au lecteur."]}
+        ],
+        "demoCta": "Ouvrir la démo recruteur",
+        "docsCta": "Lire l’architecture anonymisée",
+        "backCta": "Revenir à l’accueil"
+      }
+    },
+    "en": {
+      "languageName": "English",
+      "languageSwitch": "Français",
+      "skipLink": "Skip to content",
+      "navLabel": "Main navigation",
+      "nav": {"home": "Home", "proofs": "Evidence", "experience": "Experience", "heavents": "Sonomundi", "cv": "Detailed CV", "contact": "Contact"},
+      "homeMeta": {
+        "title": "Sébastien Grans — Senior Software Engineer, quality and agentic delivery",
+        "description": "Product-, quality- and production-oriented Senior Software Engineer with experience across varied business domains and hands-on controlled agentic delivery."
+      },
+      "hero": {
+        "eyebrow": "Product experience · Software quality · Controlled agentic delivery",
+        "value": "Drawing on experience across varied products and business domains, I turn complex needs into reliable, maintainable software. I now extend that practice with agentic development workflows grounded in specifications, tests and human validation.",
+        "technical": "PHP/Laravel/Symfony, APIs, production, functional ontology, adapted Paperclip, bounded agents, CI/CD and human decisions.",
+        "experience": "7 cumulative years of professional experience",
+        "international": "Open to international teams and English-speaking work",
+        "primaryCta": "Download the one-page resume",
+        "secondaryCta": "View the Sonomundi case study",
+        "tertiaryCta": "Contact Sébastien"
+      },
+      "sections": {
+        "skills": {"eyebrow": "Technical foundation", "title": "Core skills", "intro": "A software-engineering foundation built across varied business contexts, now extended through agent orchestration and versioned knowledge contracts."},
+        "proofs": {"eyebrow": "In under 30 seconds", "title": "Three complementary pieces of evidence", "intro": "The breadth of the background demonstrates adaptability, Evina proves critical production experience, and Sonomundi shows the current agentic direction."},
+        "trajectory": {
+          "eyebrow": "Trajectory",
+          "title": "From technical autonomy to team leadership",
+          "intro": "The Event Project Management course served a broader goal than learning about the events industry. Its three blocks — contributing to strategy, designing the project and then managing delivery — matched the commercial, strategic and collective dimensions I wanted to add to my technical foundation.",
+          "points": [
+            "My attendance certificate records 1,000 training hours. My actual investment was probably higher once personal work and deeper study are included; I nevertheless keep 1,000 hours as the only verifiable figure in professional documents.",
+            "In professional roles, I have mainly worked with a high degree of autonomy. As a technical referent, I explained decisions, reviewed code and supported developers, but I claim limited experience in line management or formal team leadership.",
+            "I transferred concepts from the course into Sonomundi: need and MVP framing, prioritization, specifications, planning, risk management, role allocation, readiness indicators, reporting, feedback collection and continuous improvement.",
+            "With Sonomundi, I now practise another form of coordination: explicit goals and specifications, work distributed across specialized agents, bounded contexts and responsibilities, outcome tracking, arbitration and final validation.",
+            "A team of agents is not a substitute for a human team. This practice nevertheless strengthens transferable skills in framing, delegation, feedback, quality control and decision-making that I want to bring to a collaborative environment."
+          ],
+          "outcome": "My goal is to grow into a role where I can remain hands-on while helping a team understand priorities, make sound decisions and deliver together.",
+          "sourceUrl": "https://www.studi.com/fr/formation/marketing/bachelor-responsable-de-projets-evenementiels/pdf",
+          "sourceLabel": "Read the official Studi curriculum"
+        },
+        "experience": {"eyebrow": "Background", "title": "Professional experience", "intro": "Condensed version. Full responsibilities and earlier experience are available in the detailed resume.", "detailsLink": "Read the detailed resume"},
+        "heavents": {"eyebrow": "Personal side project · non-salaried experience", "title": "Sonomundi, a long-term project", "intro": "A solo Laravel/Vue event and music product developed since December 2025. I am taking the time to complete it properly, with no rushed launch schedule and a gradual release once it is sufficiently polished.", "points": ["Event, artist and track flow, documented API and multi-role authentication.", "Versioned ontology connecting domain entities, relations, invariants, functional capabilities, surfaces, roles and test evidence.", "Static inventory of main on July 16, 2026: 2,189 declared PHPUnit tests across 401 PHP files; 3,320 commits.", "Developed outside working hours and pausable: Sonomundi does not affect my full availability to an employer."], "ai": "I adapted Paperclip as the control plane for a multi-agent workflow: specification-derived work packages, specialized responsibilities, bounded tasks, documentary memory, isolated branches and worktrees, Docker/CI validation and pull-request pre-review. There is no auto-merge: integration and technical decisions remain human.", "link": "Read the Sonomundi case study"},
+        "contact": {"eyebrow": "Conversation", "title": "Let’s discuss agentic development and software architecture", "intro": "Open to French and international teams, working in French or English. For a Senior Software Engineer or AI-Native Developer role, email is the most direct channel.", "cta": "Email Sébastien"}
+      },
+      "cvMeta": {
+        "title": "Detailed resume — Sébastien Grans, Senior Software Engineer",
+        "description": "Detailed resume of Sébastien Grans: agentic development, software architecture, APIs, quality, production and AI-native delivery."
+      },
+      "cv": {
+        "eyebrow": "Detailed resume",
+        "title": "Experience and deliverables",
+        "intro": "Senior Software Engineer with 7 cumulative years of professional experience, specializing in controlled agentic development workflows and backed by strong backend, architecture, quality and production foundations.",
+        "timelineNote": "Last salaried role ended in June 2024. Professional transition since July 2024; Sonomundi development started in December 2025 as a non-salaried personal product.",
+        "downloadsTitle": "Downloads",
+        "downloads": {"short": "One-page resume · recommended", "detailed": "Detailed resume PDF", "ats": "ATS resume PDF"},
+        "skillsTitle": "Detailed skills",
+        "experienceTitle": "Professional experience",
+        "otherTitle": "Other experience",
+        "projectsTitle": "Personal projects",
+        "educationTitle": "Education",
+        "languagesTitle": "Languages",
+        "languages": "French native · fluent professional English, spoken and written; C1 level estimated, without official certification.",
+        "englishProof": "Public interview conducted in English",
+        "heaventsTitle": "Recent non-salaried experience",
+        "heaventsText": "Sonomundi is a personal Laravel/Vue side project started in December 2025 and intended for gradual release once it is sufficiently polished. With no rushed launch schedule, it stays outside working hours, can be paused and does not affect my full availability to an employer.",
+        "caseLink": "View the case study and its limits"
+      },
+      "caseMeta": {
+        "title": "Sonomundi case study — personal Laravel/Vue product",
+        "description": "Architecture, roles, data, tests, CI/CD, observability, AI workflow and limits of the personal Sonomundi product."
+      },
+      "case": {
+        "eyebrow": "Case study · personal side project",
+        "title": "Sonomundi: gradually building a polished product",
+        "intro": "A non-salaried personal side project started in December 2025, Sonomundi extends my exploration of the event industry, which began with Studi’s Event Project Manager training in July 2024. I am first building a stable product whose routine operation can be largely automated, without imposing a release date. This is where the project stands today.",
+        "statusTitle": "Where does Sonomundi stand today?",
+        "statuses": [
+          {"label": "What works today", "text": "The demo lets users browse events, artists and tracks. The application handles multiple roles, exposes a documented API and includes back-end and UI tests."},
+          {"label": "What I am consolidating before release", "text": "I am narrowing the useful scope and strengthening pre-production, observability and delivery automation. The product will be released gradually once the whole is reliable enough."},
+          {"label": "What remains in the lab", "text": "Neo4j, local k3s and some satellite services remain technical explorations. They are not required to release the Laravel/Vue core."},
+          {"label": "What I do not claim yet", "text": "Sonomundi is not yet open to the public or operated at commercial scale. I therefore present no real traffic, measured availability or payments operated under real-world conditions."}
+        ],
+        "sections": [
+          {"id": "context", "title": "1. Project context", "paragraphs": ["Sonomundi is a Laravel/Vue monorepo designed as a long-term personal side project around events and music. I intend to take the time to finish it properly and release it gradually once it is sufficiently polished, without imposing a rushed launch schedule.", "I began Studi’s Event Project Management course in July 2024. My attendance certificate records 1,000 hours; I estimate that personal work and deeper study took the actual investment beyond that figure, but I only present the certified total as verifiable. The linked public document is the curriculum in force in July 2026 and now shows an indicative 500-hour duration; my certificate remains the source for the course started in 2024.", "The course did not lead to certification because I could not secure the required internship. I live in an isolated rural area where event-industry opportunities are scarce, geographically distant and often difficult to identify or access without an established local professional network. After an unsuccessful search, I chose to invest my energy in building Sonomundi rather than indefinitely waiting for an internship.", "The curriculum covered strategy and feasibility, market and positioning, client needs, project design, budget and risk, KPIs, reporting, feedback, project-team creation, delegation and internal communication. Returning to training was intended to move beyond a purely technical product perspective and learn how to carry a project forward with others.", "I then applied part of these concepts to Sonomundi: MVP framing, specifications and planning, risk prioritization, roles and responsibilities, readiness indicators, reporting, feedback loops and continuous improvement. This replaces neither the missing internship nor human-management experience, but it provides concrete, demonstrable practice.", "Development stays outside working hours and can be paused. It is organized so it does not interfere with my full availability to an employer."]},
+          {"id": "problem", "title": "2. Problem addressed", "paragraphs": ["The product core organizes event discovery and navigation between events, artists and tracks. The work also demonstrates the ability to turn a rich need into architecture, contracts, access rules and verifiable flows."]},
+          {"id": "features", "title": "3. Main features", "items": ["Events hub and region selection.", "Opening an event, artist and then a track.", "Public, authenticated and administrative surfaces.", "API resources, jobs and OpenAPI/Scramble documentation."]},
+          {"id": "architecture", "title": "4. Architecture", "paragraphs": ["The core combines a Laravel/PHP API and a Vue 3/TypeScript SPA. MySQL stores primary data; Redis supports cache, queues and local coordination. Python/FastAPI services cover targeted needs. Migrations, resources, middleware, jobs, tests and API contracts document the boundaries.", "As observed on July 21, 2026, the VPS runs 37 containers associated with Sonomundi. This total describes two application environments and their operations platform; it does not mean the product consists of 37 microservices or demonstrate production-scale load."], "items": ["11 containers for the demo and 11 for pre-production: web interface, API, HTTP proxy, worker, scheduler, real-time transport, audio transcoding, MySQL, two Redis workloads and Neo4j.", "15 shared containers: source forge and CI/CD, agent orchestration and semantic code search, observability and logs, error tracking, operations dashboards, supporting databases and access gateways."]},
+          {"id": "stack", "title": "5. Stack", "items": ["PHP 8.2, Laravel 12, Vue 3 and TypeScript.", "MySQL, Redis and Neo4j for graph/recommendation exploration.", "Python/FastAPI for targeted satellite services.", "Docker, local k3s, OpenAPI/Scramble, PHPUnit and Playwright."]},
+          {"id": "auth", "title": "6. Authentication and roles", "paragraphs": ["The scope includes multi-role authentication and differentiated access for unauthenticated visitors, authenticated public users, artists, labels and administrators. Middleware and test matrices verify these boundaries."]},
+          {"id": "ontology", "title": "7. Ontology and functional traceability", "paragraphs": ["Sonomundi has a versioned, machine-readable ontology. It formalizes domain entities — accounts, roles, artists, labels, releases, tracks, events, venues, audio assets, content requests and proofs — together with their relations, invariants, provenance policies and visibility rules.", "A functional projection connects user-visible capabilities to application surfaces, six role spaces and test evidence. The reviewed July 24, 2026 baseline inventories 511 capabilities, 113 router surfaces and 3,066 capability-role cells. Missing or contradictory evidence remains explicitly decision-needed; it is never inferred from similarity or LLM output.", "The ontology acts as a knowledge and governance contract: business boundaries, permissions and coverage gaps are auditable by people and agentic tooling alike. Neo4j is a separate graph and recommendation exploration; it is not the ontology’s source of truth."]},
+          {"id": "data", "title": "8. Data and performance", "paragraphs": ["MySQL remains the main application database. Redis is used for cache, queues and local coordination. Neo4j is still experimental. No real-production latency or commercial load capacity is published because those measurements are absent from the available evidence."]},
+          {"id": "tests", "title": "9. Tests", "paragraphs": ["The static inventory of gitea/main on July 16, 2026 identifies 2,189 PHPUnit tests across 401 PHP files. It describes the volume of tests present in the repository, not the result of a full run or a coverage rate.", "A Playwright matrix complements this evidence with 683 validated scenarios across five access profiles. These figures document the breadth of the validation system without claiming universal coverage or production validation."]},
+          {"id": "cicd", "title": "10. CI/CD", "paragraphs": ["Changes are isolated through branches and worktrees, then validated with Docker, Make, targeted tests and broader checks when shared contracts are affected. The recruiter demo is pinned to a dedicated version. A separate pre-production environment is continuously improved."]},
+          {"id": "observability", "title": "11. Observability", "paragraphs": ["Grafana/Loki and GlitchTip/Sentry are among the explored technical rails. Mature production observability, SLOs, incident history and real availability measurements are not demonstrated; they remain industrialization work."]},
+          {"id": "ai", "title": "12. Use of AI tools", "paragraphs": ["I adapted Paperclip as the control plane for agentic delivery: specifications feed work packages assigned to specialized agents, with targeted context, bounded tasks, documentary memory, isolated branches and worktrees, Docker/CI validations and pull-request pre-review. Codex, MCP and LangChain/LangGraph complement this system for analysis, implementation, testing, documentation and audits.", "The ontology and versioned contracts give agents a business vocabulary and verifiable boundaries without delegating functional truth to them. There is no auto-merge; the LLM is never the source of truth and I remain accountable for integration.", "In the long term, the goal is to automate validation, PR review, documentation updates, deployments and monitoring alerts as far as practical, reducing routine maintenance and avoiding unnecessary interruptions."]},
+          {"id": "limits", "title": "13. Current limits", "items": ["Private repository and candidate-led demonstration.", "No imposed release date: quality and maintainability take priority over speed.", "Billing, wallet, settlement, monetization and real audio are separate or partial workstreams.", "Observability, backups, secrets and infrastructure need strengthening for industrialization.", "Some advanced surfaces remain frozen or incomplete."]},
+          {"id": "learnings", "title": "14. Lessons learned", "paragraphs": ["The main lesson is to reduce the MVP earlier and distinguish technical evidence from produced volume. Tests, contracts, module boundaries, migrations and documented decisions matter more than lines of code or commit count. AI speeds up production; it does not replace framing or responsibility.", "Coordinating agents forces me to make the objective explicit, distribute responsibilities, provide the right context, control dependencies, give feedback and arbitrate results. This is not human-management experience, but it is a concrete environment for strengthening coordination practices that I want to apply as a senior contributor or lead serving a team."]},
+          {"id": "demo", "title": "15. Demo and screenshots", "paragraphs": ["The recruiter flow shows the events hub, a region, an event, an artist and a track. The screenshots below complement the demo and anonymized architecture. The reader is not asked for repository access or local installation."]}
+        ],
+        "demoCta": "Open the recruiter demo",
+        "docsCta": "Read the anonymized architecture",
+        "backCta": "Back to home"
+      }
+    }
+  }
+}

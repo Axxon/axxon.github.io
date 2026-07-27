@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://axxon.github.io/sitemap.xml

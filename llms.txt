@@ -1,0 +1,26 @@
+# Sébastien Grans — CV
+
+## Français
+
+- Accueil : https://axxon.github.io/fr/
+- CV détaillé : https://axxon.github.io/fr/cv/
+- Étude de cas Sonomundi : https://axxon.github.io/fr/sonomundi/
+
+## English
+
+- Home: https://axxon.github.io/en/
+- Detailed resume: https://axxon.github.io/en/cv/
+- Sonomundi case study: https://axxon.github.io/en/sonomundi/
+
+## Technical documents
+
+- Architecture FR: https://axxon.github.io/heavents-recruiter-pack/architecture-anonymisee.html
+- Architecture EN: https://axxon.github.io/heavents-recruiter-pack/architecture-anonymisee-en.html
+- Questions techniques FR: https://axxon.github.io/heavents-recruiter-pack/questions-techniques.html
+- Technical questions EN: https://axxon.github.io/heavents-recruiter-pack/questions-techniques-en.html
+
+## Contact
+
+- Email: mailto:sebastien.grans@gmail.com
+- GitHub: https://github.com/Axxon
+- LinkedIn: https://www.linkedin.com/in/axxonn/

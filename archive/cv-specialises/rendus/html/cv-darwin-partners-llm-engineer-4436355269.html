@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sébastien Grans - CV court</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../cv-print.css">
+</head>
+<body>
+  <main class="sheet sheet-short">
+<header class="cv-title">
+<h1>Sébastien Grans</h1>
+<img class="cv-profile-photo" src="../profil-linkedin.jpeg" alt="Photo de profil de Sébastien Grans">
+<p><strong>Ingénieur logiciel senior | IA appliquée, agents outillés et backend</strong></p>
+<p>France · Originaire d'Annecy, mobilité pour un rythme hybride à Annecy</p>
+<p><a href="mailto:sebastien.grans@gmail.com" target="_blank" rel="noopener noreferrer">sebastien.grans@gmail.com</a> · <a href="https://www.linkedin.com/in/axxonn/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/Axxon" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://axxon.github.io/" target="_blank" rel="noopener noreferrer">CV complet</a></p>
+</header>
+<section class="section section-profile" id="profil">
+<h2>Profil</h2>
+<p>Ingénieur logiciel backend avec <strong>7 années cumulées d'expérience salariée</strong> sur des API et services métier critiques, complétées par deux produits personnels utilisant l'IA. J'ai notamment développé des fonctions pour analyser des CV, les comparer à des critères professionnels, extraire des informations depuis des flyers et aider à contrôler des contributions. Je vérifie les réponses produites, protège les données personnelles et conserve une décision humaine à chaque étape sensible.</p>
+<p>J'ai également construit un environnement de développement multi-agent fondé sur des spécifications, des outils MCP, des worktrees isolés et des validations reproductibles. Je souhaite mettre cette double culture — ingénierie de production et IA contrôlée — au service des solutions LLM, RAG et agentiques de Darwin Partners.</p>
+</section>
+<section class="section section-skills" id="competences-pertinentes">
+<h2>Compétences pertinentes</h2>
+<p><strong>Fonctions développées avec l'IA :</strong> analyse et classement de CV selon des critères définis · extraction de dates et de noms d'artistes depuis des flyers · contrôle de contributions · réponses produites dans un format vérifiable · intervention humaine en cas de doute ou d'erreur</p>
+<p><strong>Développement assisté par IA :</strong> agents Codex reliés aux outils du projet via MCP · tâches isolées et précisément décrites · tests automatiques · rapports de validation · revue humaine obligatoire avant intégration</p>
+<p><strong>Développement :</strong> TypeScript · Vue 3 · JavaScript · Node.js pour l'outillage · Python/FastAPI · PHP 8 · Laravel · Symfony · REST/OpenAPI · traitements asynchrones</p>
+<p><strong>Données et plateforme :</strong> PostgreSQL · MySQL · Redis · Docker/Compose · AWS/CloudWatch · GitHub/GitLab · Grafana/Loki · ELK</p>
+</section>
+<section class="section" id="produits-ia-experience-personnelle-non-salariee">
+<h2>Produits IA — expérience personnelle non salariée</h2>
+<article class="entry">
+<h3>no-excuse — Recrutement responsable assisté par IA</h3>
+<p><strong>Juillet 2026 · prototype open source déployé</strong></p>
+<ul>
+<li>Conçoit un pipeline en deux étapes — filtrage puis scoring — avec traitements asynchrones séparés, résultats structurés et note détaillée pour chaque critère professionnel annoncé.</li>
+<li>Implémente une architecture multi-fournisseur via Laravel AI SDK, avec choix distinct des modèles de filtrage et de scoring, validation stricte des réponses et reprise des traitements en échec.</li>
+<li>Pseudonymise localement les CV avant tout appel distant ; bloque l'analyse si cette étape échoue et chiffre la copie de travail.</li>
+<li>Maintient la décision finale côté recruteur : un rejet proposé doit être confirmé et le classement ne sélectionne jamais automatiquement un candidat.</li>
+</ul>
+<p><strong>Preuves :</strong> <a href="https://no-excuse.pro/" target="_blank" rel="noopener noreferrer">démo</a> · <a href="https://github.com/Axxon/no-excuse" target="_blank" rel="noopener noreferrer">code source MIT</a></p>
+<p><strong>Stack :</strong> Laravel 13 · Vue 3 · TypeScript · PostgreSQL · Redis · Python/FastAPI · Docker · GitHub Actions</p>
+</article>
+<article class="entry">
+<h3>Sonomundi — Produit événementiel et ingénierie IA contrôlée</h3>
+<p><strong>Depuis décembre 2025 · produit personnel en préproduction</strong></p>
+<ul>
+<li>Développe un produit Laravel/Vue/TypeScript et des services Python/FastAPI, avec API documentée, workers, tests backend/UI, Docker et CI/CD.</li>
+<li>Implémente l'extraction structurée de dates et de line-up depuis des flyers, ainsi que la revue de contributions, avec schémas JSON stricts, normalisation des sorties et bascule vers une revue humaine en cas d'échec.</li>
+<li>Orchestre des agents de code avec Codex, MCP et Paperclip : tâches bornées, contexte ciblé, branches/worktrees dédiés, tests Docker, rapports de validation et aucune fusion autonome.</li>
+<li>Construit des parcours LangGraph locaux pour la préparation d'audits et l'évaluation déterministe de l'état de préparation du produit ; les preuves du dépôt restent la source de vérité.</li>
+</ul>
+<p><strong>Démonstration :</strong> <a href="https://demo.electronic.sonomundi.com/" target="_blank" rel="noopener noreferrer">https://demo.electronic.sonomundi.com/</a></p>
+</article>
+</section>
+<section class="section" id="experience-professionnelle">
+<h2>Expérience professionnelle</h2>
+<article class="entry">
+<h3>Evina — Développeur backend</h3>
+<p><strong>Juin 2022–juin 2024 · full remote</strong></p>
+<ul>
+<li>Développe et exploite des services critiques de cybersécurité et paiement mobile avec PHP/Laravel, MySQL, Redis, WebSockets et workers asynchrones.</li>
+<li>Améliore performance et fiabilité par l'indexation, une migration progressive MySQL vers Redis, le monitoring et des déploiements contrôlés avec rollback préparé.</li>
+<li>Intègre Auth0 et Laravel Sanctum ; contribue à l'architecture, aux revues de code et au diagnostic d'incidents via ELK et Grafana.</li>
+<li>Collabore avec des équipes produit et infrastructure distribuées ; anime des ateliers techniques en anglais.</li>
+</ul>
+</article>
+<article class="entry">
+<h3>Sapiendo — Développeur backend / DevOps</h3>
+<p><strong>Février 2021–mai 2022 · full remote</strong></p>
+<ul>
+<li>Conçoit une API Symfony/API Platform sécurisée par JWT pour un traitement asynchrone PDF vers XML, avec callbacks, tests et documentation.</li>
+<li>Industrialise la livraison avec Docker, GitLab/GitHub CI/CD, Postman/Newman, AWS CloudWatch, Sentry et plusieurs environnements.</li>
+</ul>
+</article>
+<article class="entry">
+<h3>Expériences antérieures</h3>
+<ul>
+<li><strong>Groupe Blachère — Ingénieur d'études et développement (2020–2021) :</strong> algorithme de placement sous contraintes, conception objet/DDD, tests et PHPStan.</li>
+<li><strong>SensioLabs — Développeur web (2018) :</strong> Symfony/API Platform, Microsoft Graph, RabbitMQ, Redis, JWT, Behat, PHPUnit, Docker et CI.</li>
+<li><strong>Norsys — Développeur backend / référent Symfony (2016–2018) :</strong> projets Decathlon, Fiducial, Technal et Franprix ; accompagnement technique et revue d'architecture.</li>
+</ul>
+<p><strong>Formation et langues :</strong> DEUST Webmaster et métiers de l'internet, Université de Limoges — 2012 · Français langue maternelle · Anglais professionnel courant, oral et écrit</p>
+</article>
+</section>
+  </main>
+</body>
+</html>

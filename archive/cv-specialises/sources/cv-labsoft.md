@@ -1,0 +1,112 @@
+# Sébastien Grans
+
+**Lead développeur full-stack PHP/Symfony/Laravel - Qualité, delivery, accompagnement développeurs**
+Lozère, France · 100 % télétravail possible · ouvert à Toulouse/Paris selon cadre
+Fuseau horaire France/CET
+Email : [sebastien.grans@gmail.com](mailto:sebastien.grans@gmail.com)
+GitHub : https://github.com/Axxon
+LinkedIn : https://www.linkedin.com/in/axxonn/
+Poste visé : CDI Lead Développeur Full Stack - Labsoft / LabFactory
+
+---
+
+## Profil ciblé
+
+Développeur senior PHP/Symfony/Laravel avec 7 ans cumulés d'expérience professionnelle dans la conception, le développement et l'industrialisation d'applications web, APIs REST/OpenAPI, services métier et produits SaaS. Profil full-stack pragmatique : socle back-end fort, expérience Vue 3/TypeScript/Nuxt, React ponctuel, HTML/CSS/JavaScript/Twig, avec attention à la qualité des parcours, à la maintenabilité et au delivery.
+
+Expériences récentes sur services critiques, multi-projets et produits métier : cybersécurité/paiements mobiles chez Evina, automatisation retraite chez Sapiendo, CRM RH, logistique, APIs, interfaces web et projet personnel Sonomundi. Habitué aux équipes resserrées, aux revues de code, à l'accompagnement de développeurs, aux tests automatisés, à Docker, CI/CD, monitoring, documentation et amélioration continue.
+
+Positionnement pour Labsoft / LabFactory : lead développeur capable de contribuer au code tout en sécurisant le cadre technique d'une équipe de 2 à 5 développeurs : clarification du besoin, choix d'architecture, qualité des livrables, tests, accompagnement junior, relation technique avec les interlocuteurs métier/client et adoption raisonnée des outils IA.
+
+---
+
+## Adéquation avec le poste
+
+- **Lead développeur opérationnel :** missions Symfony chez Norsys pour Monoprix, Decathlon et Fiducial, revues de code quotidiennes chez Evina, accompagnement Laravel/Git chez Sapiendo et animation d'ateliers OOP/TDD/Xdebug.
+- **PHP, Symfony et applications web :** expériences Symfony 3 à 5.4, API Platform, Doctrine, Twig, Laravel/PHP 8, APIs REST/OpenAPI, commandes CLI, workers, auth, tests et intégration front.
+- **Full-stack pragmatique :** Vue 3/TypeScript/Nuxt sur Sonomundi et Sapiendo, React ponctuel en production chez Evina, HTML/CSS/JavaScript/Twig sur projets Symfony.
+- **Qualité logicielle et delivery :** PHPUnit, Behat, Playwright, tests d'intégration/E2E, PHPStan/Larastan, Rector, CI/CD GitHub/GitLab/Jenkins, Docker, monitoring post-déploiement, rollback et documentation technique.
+- **Multi-projets et appui client/métier :** échanges CTO, Product Owner, infra, prestataires, équipes métier et interlocuteurs anglophones ; capacité à expliquer les arbitrages techniques et à fiabiliser les livraisons.
+- **Accessibilité, UX/UI et Figma :** sensibilité aux parcours lisibles, interfaces maintenables, contraintes d'usage et collaboration front/produit ; habitué à transformer des besoins ou maquettes en implémentations testables.
+- **IA appliquée au développement :** workflows IA contrôlés sur Sonomundi avec specs, découpage, worktrees, validation Docker/Make, tests, reporters LLM et revue humaine ; usage de l'IA comme accélérateur, pas comme source de vérité.
+
+## Projets personnels
+
+### Sonomundi - Projet personnel Laravel/Vue et workflow IA contrôlé
+**Décembre 2025–aujourd’hui · Projet parallèle, désormais largement automatisé**
+Démarche personnelle / product building - événementiel musical, web produit et IA contrôlée
+Preuves techniques : [rapport Sonomundi](https://axxon.github.io/fr/sonomundi/) · Accès démo : [https://demo.electronic.sonomundi.com/](https://demo.electronic.sonomundi.com/)
+
+- Période de transition structurée autour d'un projet web concret : cadrage produit, étude du domaine événementiel/musical, périmètre MVP, parcours utilisateurs, rôles, surfaces publiques/authentifiées/admin et priorisation.
+- Développement d'un produit Laravel/Vue en environnement privé de démonstration : back-end API, auth multi-rôles, navigation event/artist/track, logique serveur, contrats API, workers et documentation OpenAPI/Scramble.
+- Mise en place d'un workflow IA contrôlé : specs, découpage en lanes, branches/worktrees, validation Docker/Make, tests backend/UI, reporters LLM, revue humaine et intégration finale manuelle.
+- Données vérifiées le 2026-06-27 avec `cloc 2.09` : `269 066` lignes de noyau produit sur `1 582` fichiers et `127 755` lignes de tests produit sur `843` fichiers, hors dépendances et artefacts lourds.
+- Validation démontrable : run PHPUnit complet documenté `1965 passed / 14144 assertions`, captures Playwright du pack recruteur régénérées le 2026-06-27 avec `2 passed`, `0 failed`, OpenAPI/Scramble à `483` paths et `546` operations.
+- Garde-fous : pas d'auto-merge, secrets non exposés, LLM non source de vérité, validation reproductible, arbitrage humain sur architecture, dette technique et priorisation.
+
+**Stack :** PHP 8.2, Laravel 12, Vue 3, TypeScript, Python/FastAPI, Redis, MySQL, PostgreSQL, Neo4j, Playwright, OpenAPI, Docker, CI/CD, k3s local, Grafana/Loki, GlitchTip/Sentry, Codex, MCP, Paperclip, LangChain/LangGraph
+
+## Expérience professionnelle
+
+### Evina - Développeur back-end senior
+**Juin 2022 - Juin 2024**
+FinTech, cybersécurité et paiements mobiles - [evina.com](https://www.evina.com/) · Full remote
+
+- Développement back-end sur services critiques à fort trafic : cybersécurité, paiements mobiles, temps réel/WebSockets, produit métier critique/SaaS et environnement multi-région.
+- Détection de fraude mobile : analyse de patterns, règles de détection et flux batch/temps réel via workers asynchrones, avec contraintes de latence, charge, traçabilité et faux positifs.
+- Scalabilité et performance : indexation MySQL puis migration progressive de modèles Laravel Eloquent vers Redis sur données tracking/scoring fraude, avec canary deployment, monitoring Kibana/Grafana, rollback préparé et compatibilité API.
+- Authentification sécurisée : intégration Auth0/Laravel Sanctum sur 3 applicatifs Laravel + Dundas pour remplacer des logins séparés par un SSO multi-app clients externes ; export/normalisation utilisateurs, appels API Auth0, mapping rôles, tests et documentation.
+- Architecture et production : Clean Architecture, Design Patterns, schema design, diagrammes de séquence, commandes CLI, async/queues/workers, Jenkins, GitLab CI, transition Kubernetes/GitHub, monitoring et diagnostic incidents.
+- Qualité et leadership technique : revues de code quotidiennes sur 4 à 5 développeurs cross-product, analyse statique, Rector, refactoring, tests automatisés, security testing, documentation Notion, pédagogie Git et ateliers OOP/TDD/Xdebug en anglais.
+
+**Stack :** PHP, Laravel, Laravel Octane/Swoole, Laravel Reverb/WebSockets, Laravel Sanctum, Auth0, Redis, MySQL, Docker, CLI, async/queues/workers, ELK, Grafana/logs, JavaScript, React, Jenkins, GitLab CI, GitHub, Kubernetes
+
+### Sapiendo - Développeur back-end / DevOps
+**Février 2021 - Mai 2022**
+Services retraite et automatisation métier - [sapiendo-retraite.fr](https://www.sapiendo-retraite.fr/) · Full remote
+
+- Conception et livraison d'une API Symfony 5.4 LTS/API Platform sécurisée JWT de conversion RIS PDF vers XML : upload PDF, parser, callback XML, téléchargement du résultat et source structurée pour algorithmes métier.
+- Traduction du besoin en architecture API, ressources API Platform, opérations custom, client du microservice parser, tests unitaires, scénario end-to-end JWT/PDF/XML et documentation d'architecture.
+- Développement Laravel métier : formules de calcul retraite issues de textes officiels, parcours utilisateur Twig, Design Patterns, refactoring, tests et échanges Product Owner.
+- CI/CD GitHub/Docker sur le composant PDF/XML, reprise des environnements Docker, dependency management Composer/npm/npx, coordination prestataire, revue de PR et contribution AWS CloudWatch/Sentry.
+- Accompagnement d'un développeur interne sur Laravel et Git : rebase, squash, cherry-pick, messages de commit, découpage de PR et relecture quotidienne.
+
+**Stack :** PHP 8, Laravel, Symfony 5.4 LTS, API Platform, Doctrine, Twig, Docker, GitHub CI/CD, Nuxt.js, Postman, AWS, CloudWatch, Sentry
+
+### Norsys - Développeur back-end Symfony
+**2016 - 2018**
+ESN, projets grands comptes - [norsys.fr](https://www.norsys.fr/) · Lyon et périphérie · Sur site / chez client selon mission
+
+- Missions Symfony pour Monoprix, Decathlon et Fiducial : CRM RH, registre LDAP et outil interne de suivi de rondes.
+- Appui architecture Symfony, Design Patterns, choix techniques, découpage modules, optimisation de requêtes Symfony/Doctrine, résolution de bugs, revue de code et support développeurs.
+- Mission Decathlon : développement Symfony + Twig d'un registre LDAP full OOP et de formulaires dynamiques.
+- Mission Fiducial chez client : développement Symfony + Twig d'un outil interne de suivi des rondes d'agents de sécurité.
+- Développement de l'authentification Symfony, architecture modulaire, intégration Webpack ES6 et développement orienté tests avec Atoum en environnement Scrum.
+
+**Stack :** Symfony 3, Doctrine, PostgreSQL, optimisation de requêtes, Twig, Webpack, ES6, Docker, Vagrant
+
+---
+
+## Compétences clés
+
+**Back-end & APIs :** PHP 8 · Laravel · Symfony · API Platform · Doctrine/Eloquent · APIs REST/OpenAPI · Auth0 · Laravel Sanctum · JWT/SSO · versioning API · CLI · workers/queues/async · RabbitMQ · WebSockets
+
+**Front-end web :** HTML5 · CSS3 · JavaScript · TypeScript · Vue 3 · Nuxt.js · Vite · Pinia · React ponctuel · Twig · Webpack · intégration d'interfaces métier
+
+**Qualité, tests & accessibilité :** PHPUnit · Behat · Playwright · tests unitaires/intégration/E2E · PHPStan/Larastan · Rector · Pint · PHPCS · TDD · OOP · SOLID · PSR · Design Patterns · sensibilité accessibilité numérique · revue de code
+
+**Delivery & production :** Docker · Docker Compose · Make · GitHub CI/CD · GitLab CI/CD · Jenkins · Kubernetes/k3s · Nginx · AWS CloudWatch · ELK/Kibana · Grafana · Sentry/GlitchTip · monitoring · rollback · diagnostic incident
+
+**Leadership & collaboration :** accompagnement développeurs · pédagogie Git · design reviews · arbitrages techniques · clarification du besoin · documentation Notion/docs · échanges CTO/PO/infra/client · Agile/Scrum · written communication · anglais professionnel courant
+
+**IA & amélioration continue :** Codex · Codex Skills · MCP · Paperclip · LangChain/LangGraph · specs pour IA · worktrees · validation automatisée · reporters LLM · revue humaine · amélioration continue des pratiques
+
+---
+
+## Expériences complémentaires & formation
+
+- **Groupe Blachère (2020-2021, hybride)** : microservice Symfony avec interface/API/Docker pour modéliser des contraintes logistiques de stockage et communiquer avec le coeur SaaS.
+- **SensioLabs (2018, 6 mois, full remote)** : site événementiel interne Symfony/Twig, endpoints API pour le client Alumni, interconnexion d'APIs internes pour synthèses exposées via API publique, RabbitMQ, tests BDD/unitaires et CI Docker/Travis.
+- **ActivCompany / YouMiam (2015)** : alternances Symfony2 sur réseau social professionnel sectoriel et réseau social culinaire ; Facebook Login, Elasticsearch, front et migration Doctrine/MariaDB.
+- **E-testing / Indexx (indépendant)** : questionnaires techniques PHP pour formation, avec vérification Docker multi-versions ; mission courte OAuth, Twilio et NestJS.
+- **Formation** : DEUST Webmaster, Université de Limoges (2012) · Piano jazz, Conservatoire d'Annecy (2008) · Bac STI (2005).

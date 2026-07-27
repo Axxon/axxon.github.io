@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonomundi | Captures</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: #d8e1ec;
+      background: #05070a;
+      font-family: Inter, "IBM Plex Sans", Arial, sans-serif;
+    }
+
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 38px 0 60px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .back {
+      color: #91a0b4;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 18px 0 8px;
+      color: #f4f7fb;
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      line-height: 0.96;
+    }
+
+    p {
+      max-width: 760px;
+      margin: 0 0 24px;
+      color: #aeb9c8;
+      line-height: 1.5;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      border: 1px solid rgba(145, 160, 180, 0.22);
+      border-radius: 10px;
+      background: #0d131c;
+      color: inherit;
+      overflow: hidden;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #02050a;
+    }
+
+    span {
+      display: block;
+      padding: 11px 12px 12px;
+      color: #eef6ff;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 880px) {
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      main {
+        width: min(100% - 22px, 1180px);
+        padding-top: 24px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../../">Retour au CV</a>
+    <h1>Captures Sonomundi</h1>
+    <p>Parcours court Sonomundi : hub events, région sélectionnée, focus event/artist/track, architecture anonymisée, workflow IA/produit et preuve visuelle de validation.</p>
+    <div class="grid">
+      <a class="card" href="./01-events-hub.png"><img src="./01-events-hub.png" alt="Hub events"><span>01 - Hub events</span></a>
+      <a class="card" href="./01b-events-region-selected.png"><img src="./01b-events-region-selected.png" alt="Région sélectionnée"><span>01b - Région sélectionnée</span></a>
+      <a class="card" href="./02-event-open.png"><img src="./02-event-open.png" alt="Focus event"><span>02 - Focus event</span></a>
+      <a class="card" href="./03-artist-open.png"><img src="./03-artist-open.png" alt="Focus artist"><span>03 - Focus artist</span></a>
+      <a class="card" href="./04-track-open.png"><img src="./04-track-open.png" alt="Focus track"><span>04 - Focus track</span></a>
+      <a class="card" href="./08-phpunit-current-run.png"><img src="./08-phpunit-current-run.png" alt="Run PHPUnit"><span>08 - Run PHPUnit</span></a>
+      <a class="card" href="./10-architecture-anonymisee.png"><img src="./10-architecture-anonymisee.png" alt="Architecture anonymisée"><span>10 - Architecture</span></a>
+      <a class="card" href="./11-stack-ia-produit-cicd.png"><img src="./11-stack-ia-produit-cicd.png" alt="Workflow IA, delivery et produit Sonomundi"><span>11 - Stack IA + produit</span></a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonomundi Anonymized Architecture - Sonomundi</title>
+  <meta name="description" content="Components, flows, invariants and limits without secrets.">
+  <link rel="canonical" href="https://axxon.github.io/heavents-recruiter-pack/architecture-anonymisee-en.html">
+  <link rel="alternate" hreflang="fr" href="https://axxon.github.io/heavents-recruiter-pack/architecture-anonymisee.html">
+  <link rel="alternate" hreflang="en" href="https://axxon.github.io/heavents-recruiter-pack/architecture-anonymisee-en.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Sonomundi Anonymized Architecture">
+  <meta property="og:description" content="Components, flows, invariants and limits without secrets.">
+  <meta property="og:url" content="https://axxon.github.io/heavents-recruiter-pack/architecture-anonymisee-en.html">
+  <meta property="og:image" content="https://axxon.github.io/assets/social-card-en.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sonomundi Anonymized Architecture">
+  <meta name="twitter:description" content="Components, flows, invariants and limits without secrets.">
+  <meta name="twitter:image" content="https://axxon.github.io/assets/social-card-en.png">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #586174;
+      --line: #d8dde8;
+      --panel: #ffffff;
+      --soft: #f5f7fb;
+      --accent: #285ed8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--soft);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    .page {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .back {
+      color: var(--accent);
+      font-size: 0.94rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    header {
+      margin: 22px 0 18px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 780px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 22px 0;
+    }
+
+    nav a {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink);
+      background: #fff;
+      font-weight: 700;
+      padding: 8px 12px;
+      text-decoration: none;
+    }
+
+    nav a[aria-current="page"] {
+      border-color: var(--accent);
+      color: #fff;
+      background: var(--accent);
+    }
+
+    .lang-switch {
+      display: flex;
+      gap: 6px;
+      margin-left: auto;
+    }
+
+    .lang-switch a {
+      min-width: 42px;
+      text-align: center;
+    }
+
+    .lang-switch a[aria-current="page"] {
+      border-color: var(--accent);
+      color: #fff;
+      background: var(--accent);
+    }
+
+    article {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: clamp(22px, 4vw, 40px);
+    }
+
+    h2 {
+      margin: 32px 0 10px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      font-size: 1.45rem;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    h1 + h2,
+    article > h2:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: 0;
+    }
+
+    p,
+    ul,
+    ol,
+    blockquote,
+    .table-wrap,
+    pre {
+      margin: 12px 0;
+    }
+
+    ul,
+    ol {
+      padding-left: 1.25rem;
+    }
+
+    li + li {
+      margin-top: 5px;
+    }
+
+    code {
+      border-radius: 4px;
+      background: #eef2f8;
+      color: #13213d;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 0.92em;
+      padding: 0.08rem 0.28rem;
+    }
+
+    pre {
+      overflow-x: auto;
+      border-radius: 8px;
+      background: #101827;
+      color: #e8edf7;
+      padding: 16px;
+    }
+
+    pre code {
+      background: transparent;
+      color: inherit;
+      padding: 0;
+    }
+
+    blockquote {
+      border-left: 4px solid var(--accent);
+      color: var(--muted);
+      margin-left: 0;
+      padding-left: 14px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    a:focus-visible {
+      outline: 3px solid #a74412;
+      outline-offset: 3px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--line);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #edf2fa;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 24px, 960px);
+        padding-top: 24px;
+      }
+
+      article {
+        padding: 18px;
+      }
+
+      nav a {
+        width: 100%;
+      }
+
+      .lang-switch {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .lang-switch a {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="../en/heavents/">Back to the case study</a>
+    <header>
+      <h1>Sonomundi Anonymized Architecture</h1>
+      <p class="lead">Components, flows, invariants and limits without secrets.</p>
+      <nav aria-label="Sonomundi documents">
+        <a href="./questions-techniques-en.html">Technical questions</a>
+        <a href="./architecture-anonymisee-en.html" aria-current="page">Anonymized architecture</a>
+        <span class="lang-switch">
+        <a href="./architecture-anonymisee.html" lang="fr" hreflang="fr">FR</a>
+        <a href="./architecture-anonymisee-en.html" lang="en" hreflang="en" aria-current="page">EN</a>
+      </span>
+      </nav>
+    </header>
+    <article>
+<p>This page summarizes the project architecture. It contains no secret, operating procedure or launch command.</p>
+<h2 id="overview">Overview</h2>
+<p>Sonomundi is a long-term personal side project built around a Laravel/Vue monorepo to explore a music/event product:</p>
+<ul>
+<li>event discovery;</li>
+<li>event/artist/track navigation;</li>
+<li>multi-role auth;</li>
+<li>public/authenticated/admin surfaces;</li>
+<li>tests and validation of the demo path.</li>
+</ul>
+<h2 id="main-components">Main Components</h2>
+<div class="table-wrap"><table><thead><tr><th>Layer</th><th>Role</th></tr></thead><tbody><tr><td>Laravel / PHP</td><td>REST API, auth, roles, business resources, jobs</td></tr><tr><td>Vue 3 / TypeScript</td><td>SPA, navigation, events hub, user surfaces</td></tr><tr><td>MySQL</td><td>main application data</td></tr><tr><td>Redis</td><td>cache, queues, local coordination</td></tr><tr><td>Neo4j</td><td>graph/recommendation experimentation</td></tr><tr><td>Playwright / PHPUnit</td><td>back-end, UI and role-based access validations</td></tr><tr><td>OpenAPI/Scramble</td><td>documented API contracts</td></tr><tr><td>Docker/local k3s</td><td>demo environment and local validation</td></tr></tbody></table></div>
+<h2 id="demonstrated-path">Demonstrated Path</h2>
+<ol>
+<li><code>/events</code> hub.</li>
+<li>Selected region with visible events.</li>
+<li>Event, artist and track opening.</li>
+</ol>
+<p>The public/authenticated/admin surfaces are part of the product scope. The short path prioritizes discovery and event/artist/track navigation to keep a clear reading of the domain.</p>
+<h2 id="ai-workflow">AI Workflow</h2>
+<p>AI was used as a delivery accelerator, not as a replacement for technical responsibility:</p>
+<ul>
+<li>Codex for implementation, analysis and documentation;</li>
+<li>Codex Skills and MCP to support contextualized workflows;</li>
+<li>Paperclip to structure agent lanes;</li>
+<li>LangChain/LangGraph for audits and readiness;</li>
+<li>isolated worktrees to separate workstreams;</li>
+<li>Docker/tests validation;</li>
+<li>pull-request auto-review and validation documentation before the integration decision.</li>
+</ul>
+<h2 id="presentation-limits">Presentation Limits</h2>
+<ul>
+<li>The project is presented as a Laravel/Vue side project intended for gradual release, with no rushed schedule.</li>
+<li>Development stays outside working hours, can be paused and does not affect full availability to an employer.</li>
+<li>Billing, wallet, settlement, monetization and advanced surfaces remain distinct workstreams.</li>
+<li>Secrets, credentials and operating details are not shared.</li>
+<li>The demonstration is done through screen sharing; the reader does not have to run the project.</li>
+</ul>
+    </article>
+  </main>
+</body>
+</html>

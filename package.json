@@ -1,0 +1,22 @@
+{
+  "name": "sebastien-grans-portfolio-cv",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio bilingue et CV de Sébastien Grans, Senior Software Engineer spécialisé en développement agentique et architecture logicielle.",
+  "scripts": {
+    "build": "node scripts/build-site.js && node scripts/render-heavents-pack.js",
+    "check": "node scripts/check-site.js",
+    "check:browser": "playwright test tests/browser.spec.js --reporter=line",
+    "check:pdf": "node scripts/check-pdfs.js",
+    "serve": "node scripts/serve.js",
+    "test": "npm run build && npm run check",
+    "render:cv": "node scripts/render-cv.js cv-short.md",
+    "render:cv:all": "node scripts/render-cv.js cv-short.md && node scripts/render-cv.js cv-final.md && node scripts/render-cv.js cv-ats.md && node scripts/render-cv.js cv-short-en.md && node scripts/render-cv.js cv-final-en.md && node scripts/render-cv.js cv-ats-en.md"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1"
+  }
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frequently Asked Technical Questions - Sonomundi</title>
+  <meta name="description" content="AI, maintainability, validation and team integration.">
+  <link rel="canonical" href="https://axxon.github.io/heavents-recruiter-pack/questions-techniques-en.html">
+  <link rel="alternate" hreflang="fr" href="https://axxon.github.io/heavents-recruiter-pack/questions-techniques.html">
+  <link rel="alternate" hreflang="en" href="https://axxon.github.io/heavents-recruiter-pack/questions-techniques-en.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Frequently Asked Technical Questions">
+  <meta property="og:description" content="AI, maintainability, validation and team integration.">
+  <meta property="og:url" content="https://axxon.github.io/heavents-recruiter-pack/questions-techniques-en.html">
+  <meta property="og:image" content="https://axxon.github.io/assets/social-card-en.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Frequently Asked Technical Questions">
+  <meta name="twitter:description" content="AI, maintainability, validation and team integration.">
+  <meta name="twitter:image" content="https://axxon.github.io/assets/social-card-en.png">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #586174;
+      --line: #d8dde8;
+      --panel: #ffffff;
+      --soft: #f5f7fb;
+      --accent: #285ed8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--soft);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    .page {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .back {
+      color: var(--accent);
+      font-size: 0.94rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    header {
+      margin: 22px 0 18px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 780px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 22px 0;
+    }
+
+    nav a {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink);
+      background: #fff;
+      font-weight: 700;
+      padding: 8px 12px;
+      text-decoration: none;
+    }
+
+    nav a[aria-current="page"] {
+      border-color: var(--accent);
+      color: #fff;
+      background: var(--accent);
+    }
+
+    .lang-switch {
+      display: flex;
+      gap: 6px;
+      margin-left: auto;
+    }
+
+    .lang-switch a {
+      min-width: 42px;
+      text-align: center;
+    }
+
+    .lang-switch a[aria-current="page"] {
+      border-color: var(--accent);
+      color: #fff;
+      background: var(--accent);
+    }
+
+    article {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: clamp(22px, 4vw, 40px);
+    }
+
+    h2 {
+      margin: 32px 0 10px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      font-size: 1.45rem;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    h1 + h2,
+    article > h2:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 1.08rem;
+      letter-spacing: 0;
+    }
+
+    p,
+    ul,
+    ol,
+    blockquote,
+    .table-wrap,
+    pre {
+      margin: 12px 0;
+    }
+
+    ul,
+    ol {
+      padding-left: 1.25rem;
+    }
+
+    li + li {
+      margin-top: 5px;
+    }
+
+    code {
+      border-radius: 4px;
+      background: #eef2f8;
+      color: #13213d;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 0.92em;
+      padding: 0.08rem 0.28rem;
+    }
+
+    pre {
+      overflow-x: auto;
+      border-radius: 8px;
+      background: #101827;
+      color: #e8edf7;
+      padding: 16px;
+    }
+
+    pre code {
+      background: transparent;
+      color: inherit;
+      padding: 0;
+    }
+
+    blockquote {
+      border-left: 4px solid var(--accent);
+      color: var(--muted);
+      margin-left: 0;
+      padding-left: 14px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    a:focus-visible {
+      outline: 3px solid #a74412;
+      outline-offset: 3px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--line);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #edf2fa;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 24px, 960px);
+        padding-top: 24px;
+      }
+
+      article {
+        padding: 18px;
+      }
+
+      nav a {
+        width: 100%;
+      }
+
+      .lang-switch {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .lang-switch a {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="../en/heavents/">Back to the case study</a>
+    <header>
+      <h1>Frequently Asked Technical Questions</h1>
+      <p class="lead">AI, maintainability, validation and team integration.</p>
+      <nav aria-label="Sonomundi documents">
+        <a href="./questions-techniques-en.html" aria-current="page">Technical questions</a>
+        <a href="./architecture-anonymisee-en.html">Anonymized architecture</a>
+        <span class="lang-switch">
+        <a href="./questions-techniques.html" lang="fr" hreflang="fr">FR</a>
+        <a href="./questions-techniques-en.html" lang="en" hreflang="en" aria-current="page">EN</a>
+      </span>
+      </nav>
+    </header>
+    <article>
+<h2 id="how-large-is-sonomundi">"How large is Sonomundi?"</h2>
+<p>The product core was measured on July 8, 2026 with <code>cloc 2.09</code> on branch <code>docs/preprod-v046-verification-20260708</code>: <code>274,225</code> application-code lines across <code>1,589</code> files, excluding tests, docs and dependencies, including <code>136,791</code> PHP lines, <code>102,986</code> Vue lines and <code>29,366</code> TypeScript lines. Product tests represented <code>130,623</code> lines across <code>813</code> files. On July 16, 2026, the project has <code>3,320</code> commits on <code>main</code>. These volumes remain secondary metrics: maintainability is assessed through module boundaries, tests, migrations, API contracts, documentation and the ability to isolate a change.</p>
+<h2 id="how-much-was-generated-by-ai">"How much was generated by AI?"</h2>
+<p>The project assumes significant AI assistance, without a reliable percentage to announce. Changes go through isolated branches and worktrees, Docker/CI tests, pull-request auto-review processes and structured documentation that simplifies control. There is no auto-merge: I remain accountable for framing, architecture, trade-offs and the integration decision. I present Sonomundi as a long-term Laravel/Vue side project, not as code accepted without verification.</p>
+<h2 id="how-do-you-validate-the-code">"How do you validate the code?"</h2>
+<p>In layers: PHPUnit back-end tests, Playwright UI tests, role-based access matrices, OpenAPI/Scramble for contracts, pull-request auto-review, validation documentation and a check of the demo path. The static inventory of <code>main</code> on July 16, 2026 counts <code>2,189</code> declared PHPUnit tests across <code>401</code> PHP files (<code>1,687</code> <code>test*</code> methods and <code>502</code> <code>#[Test]</code> methods). This describes the codebase, not a successful full run; data sets may also change the number of executed cases. Functionally, the documented Playwright matrix shows <code>683 passed / 0 failed</code> across unlogged, public, artist, label and admin roles. For a given task, I look for the most targeted validation possible, then broaden it if the change touches a shared contract.</p>
+<h2 id="what-proves-the-project-is-structured">"What proves the project is structured?"</h2>
+<p>There are migrations, API resources, role middlewares, jobs, tests, architecture documentation, OpenAPI and access mapping. These are markers of a structured product. Some surfaces remain frozen or partial.</p>
+<h2 id="what-would-you-redo-if-you-had-to-industrialize-the-project">"What would you redo if you had to industrialize the project?"</h2>
+<p>I would freeze a smaller MVP, remove off-track workstreams, better separate services that deserve distinct ownership, strengthen CI/CD, secrets management, observability, backups, monitoring and demo data. I would also treat economic flows and real audio as dedicated workstreams with stricter non-regression tests.</p>
+<h2 id="how-do-you-avoid-the-black-box-effect-of-ai-agents">"How do you avoid the black-box effect of AI agents?"</h2>
+<p>Through explicit specs, separate worktrees, authorized scopes, required validations, pull-request auto-review processes and short handoff documentation. An agent produces a proposal, a diff or an analysis; it has no merge authority. The source of truth remains the repository, tests, documented contracts and the integration decision for which I am accountable.</p>
+<h2 id="could-this-side-project-interfere-with-a-full-time-role">"Could this side project interfere with a full-time role?"</h2>
+<p>No. Sonomundi is a long-term personal project developed outside working hours, with no rushed launch schedule. It can be paused, and I remain fully available to my employer. My goal is to automate tests, PR reviews, documentation updates, deployments and monitoring alerts as far as practical to minimize maintenance and interruptions.</p>
+<h2 id="what-is-demonstrable-and-what-is-not">"What is demonstrable and what is not?"</h2>
+<p>Demonstrable in screen sharing: <code>/events</code>, selected region, event/artist/track opening, OpenAPI, anonymized diagram and test results. The product also covers multi-role auth, public/authenticated/admin surfaces, API contracts and workers. The reader has nothing to run. Payment/tokens/settlement, infrastructure industrialization, mature production observability, autonomous AI agents and admin surfaces open to external users remain distinct workstreams.</p>
+<h2 id="why-start-with-this-path-when-there-are-more-features">"Why start with this path when there are more features?"</h2>
+<p>Because it gives a quick reading of the product core: event discovery and event/artist/track navigation. Other areas can then be detailed depending on the reading depth: roles, public/authenticated/admin surfaces, workers, API contracts, tests and AI workflow.</p>
+<h2 id="conclusion-angle">Conclusion Angle</h2>
+<p>The summary to keep in mind: "I use AI to accelerate a long-term side project, with pull-request auto-review, tests and validation documentation. I remain accountable for the frame, invariants and integration decision." This is the central point of the Sonomundi workflow.</p>
+<p>This page is a presentation support. It complements the local project demonstration.</p>
+    </article>
+  </main>
+</body>
+</html>

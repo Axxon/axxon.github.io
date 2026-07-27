@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Étude de cas Sonomundi — produit personnel Laravel/Vue</title>
+  <meta name="description" content="Architecture, rôles, données, tests, CI/CD, observabilité, workflow IA et limites du produit personnel Sonomundi.">
+  <meta name="theme-color" content="#f6f4ef">
+  <link rel="canonical" href="https://axxon.github.io/fr/sonomundi/">
+  <link rel="alternate" hreflang="fr" href="https://axxon.github.io/fr/sonomundi/">
+  <link rel="alternate" hreflang="en" href="https://axxon.github.io/en/sonomundi/">
+  <link rel="alternate" hreflang="x-default" href="https://axxon.github.io/fr/sonomundi/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Sébastien Grans — CV">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:title" content="Étude de cas Sonomundi — produit personnel Laravel/Vue">
+  <meta property="og:description" content="Architecture, rôles, données, tests, CI/CD, observabilité, workflow IA et limites du produit personnel Sonomundi.">
+  <meta property="og:url" content="https://axxon.github.io/fr/sonomundi/">
+  <meta property="og:image" content="https://axxon.github.io/assets/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sébastien Grans — Senior Software Engineer — backend, qualité, architecture et delivery agentique maîtrisé">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Étude de cas Sonomundi — produit personnel Laravel/Vue">
+  <meta name="twitter:description" content="Architecture, rôles, données, tests, CI/CD, observabilité, workflow IA et limites du produit personnel Sonomundi.">
+  <meta name="twitter:image" content="https://axxon.github.io/assets/social-card.png">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Sébastien Grans","url":"https://axxon.github.io/fr/","image":"https://axxon.github.io/profil-linkedin.jpeg","email":"mailto:sebastien.grans@gmail.com","jobTitle":"Senior Software Engineer — backend, qualité, architecture et delivery agentique maîtrisé","address":{"@type":"PostalAddress","addressRegion":"Lozère","addressCountry":"FR"},"sameAs":["https://github.com/Axxon","https://www.linkedin.com/in/axxonn/"],"knowsAbout":["développement piloté par les specs et ingénierie du contexte","Orchestration d’agents","validation humaine (commits/PR formalisés, pré-revue spécialisée)","architecture pragmatique — YAGNI","ontologie et contrats de connaissance versionnés","contrats API documentés et testés","compatibilité ascendante","contrôle d’accès multi-rôles","identifiants publics stables","stockage, cache et traitements asynchrones selon l’usage","tests multi-niveaux","tests challengés par mutations","validation phasée des specs","audit agentique de la couverture","recherche sémantique, puis validation des dépendances, flux et impacts","environnements isolés et reproductibles","validation CI/CD avant déploiement","déploiement progressif et rollback","observabilité et diagnostic d’incidents","gestion des secrets sans exposition"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"Université de Limoges"}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="container nav-shell">
+    <a class="brand" href="/fr/" aria-label="Sébastien Grans — Accueil">
+      <span>Sébastien Grans</span>
+      <small>Senior Web Software Engineer</small>
+    </a>
+    <nav aria-label="Navigation principale">
+      <a href="/fr/">Accueil</a>
+      <a href="/fr/#preuves">Preuves</a>
+      <a href="/fr/sonomundi/" aria-current="page">Sonomundi</a>
+      <a href="/fr/cv/">CV détaillé</a>
+      <a href="/fr/#contact">Contact</a>
+      <a class="language-link" href="/en/sonomundi/" lang="en" hreflang="en">English</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+  <header class="page-hero case-hero">
+    <div class="container reading-width">
+      <p class="eyebrow">Étude de cas · side project personnel</p>
+      <h1>Sonomundi : construire progressivement un produit abouti</h1>
+      <p class="page-intro">Side project personnel non salarié démarré en décembre 2025, Sonomundi prolonge une découverte du secteur de l’événementiel commencée avec une formation de Chef de projet événementiel chez Studi en juillet 2024. Je construis d’abord un produit stable dont l’exploitation courante pourra être largement automatisée, sans m’imposer de date de sortie. Voici précisément où j’en suis aujourd’hui.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="https://demo.electronic.sonomundi.com/">Ouvrir la démo recruteur</a>
+        <a class="text-link" href="/fr/">Revenir à l’accueil</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section-tinted status-section">
+    <div class="container reading-width">
+      <h2>Où en est Sonomundi aujourd’hui ?</h2>
+      <div class="status-grid"><article class="status-item">
+  <h3>Ce qui fonctionne aujourd’hui</h3>
+  <p>La démo permet de parcourir des événements, des artistes et des morceaux. L’application gère plusieurs rôles, expose une API documentée et dispose de tests back-end et UI.</p>
+</article>
+<article class="status-item">
+  <h3>Ce que je consolide avant une sortie</h3>
+  <p>Je resserre le périmètre utile et je renforce la préproduction, l’observabilité et l’automatisation du delivery. La publication sera progressive, quand l’ensemble sera suffisamment fiable.</p>
+</article>
+<article class="status-item">
+  <h3>Ce qui reste en laboratoire</h3>
+  <p>Neo4j, k3s local et certains services satellites restent des explorations techniques. Ils ne conditionnent pas la sortie du cœur Laravel/Vue.</p>
+</article>
+<article class="status-item">
+  <h3>Ce que je ne revendique pas encore</h3>
+  <p>Sonomundi n’est pas encore ouvert au public ni exploité à l’échelle commerciale. Je ne présente donc pas de trafic réel, de disponibilité mesurée ou de paiement exploité en conditions réelles.</p>
+</article></div>
+    </div>
+  </section>
+
+  <div class="container reading-width case-content"><section class="case-section" id="contexte">
+  <h2>1. Contexte du projet</h2>
+  <p>Sonomundi est un monorepo Laravel/Vue conçu comme un side project personnel de long terme autour de l’événementiel et de la musique. Je veux prendre le temps de le terminer correctement et le publier progressivement lorsqu’il sera suffisamment abouti, sans imposer de calendrier de lancement pressant.</p>
+<p>J’ai commencé en juillet 2024 chez Studi une formation de Responsable de projets événementiels. Mon attestation comptabilise 1 000 heures ; j’estime que le travail personnel et l’approfondissement ont porté l’investissement réel au-delà, mais je ne présente comme vérifiable que le volume attesté. La fiche publique liée correspond au programme en vigueur en juillet 2026 et affiche désormais une durée indicative de 500 heures ; mon attestation reste la source relative au parcours commencé en 2024.</p>
+<p>Le parcours n’a pas débouché sur la certification parce que je n’ai pas trouvé le stage nécessaire. Je vis dans un territoire rural isolé où les opportunités événementielles sont rares, éloignées géographiquement et souvent difficiles à identifier ou à rejoindre sans réseau professionnel local. Après cette recherche infructueuse, j’ai choisi d’investir mon énergie dans la construction de Sonomundi plutôt que de prolonger indéfiniment l’attente d’un stage.</p>
+<p>Le programme couvrait la stratégie et l’étude de faisabilité, le marché et le positionnement, le besoin client, la conception du projet, le budget et les risques, les KPI, le reporting, le feedback, la création d’une équipe projet, la délégation et la communication interne. Cette reprise de formation visait à dépasser une lecture uniquement technique du produit et à apprendre à conduire un projet avec d’autres.</p>
+<p>J’ai ensuite appliqué une partie de ces concepts à Sonomundi : cadrage du MVP, spécifications et planning, priorisation des risques, rôles et responsabilités, indicateurs de readiness, reporting, boucles de feedback et amélioration continue. Cela ne remplace ni le stage absent ni une expérience de management humain, mais fournit une mise en pratique concrète et démontrable.</p>
+<p>Son développement reste hors temps de travail et peut être mis en pause. Il est organisé pour ne pas empiéter sur ma disponibilité complète pour un employeur.</p>
+
+
+
+</section>
+<section class="case-section" id="probleme">
+  <h2>2. Problème traité</h2>
+  <p>Le cœur du produit organise la découverte d’événements et la navigation entre événements, artistes et morceaux. Le travail sert aussi à démontrer la capacité à transformer un besoin riche en architecture, contrats, règles d’accès et parcours vérifiables.</p>
+
+
+
+</section>
+<section class="case-section" id="fonctionnalites">
+  <h2>3. Fonctionnalités principales</h2>
+
+  <ul><li>Hub d’événements et sélection d’une région.</li><li>Ouverture d’un événement, d’un artiste puis d’un morceau.</li><li>Surfaces publiques, authentifiées et administratives.</li><li>Ressources API, jobs et documentation OpenAPI/Scramble.</li></ul>
+
+
+</section>
+<section class="case-section" id="architecture">
+  <h2>4. Architecture</h2>
+  <p>Le noyau associe une API Laravel/PHP et une SPA Vue 3/TypeScript. MySQL porte les données principales ; Redis sert au cache, aux files et à la coordination locale. Des services Python/FastAPI existent pour des besoins ciblés. Les frontières sont documentées par migrations, resources, middlewares, jobs, tests et contrats API.</p>
+<p>Au 21 juillet 2026, le VPS exécute 37 conteneurs rattachés à Sonomundi. Ce total décrit deux environnements applicatifs et leur plateforme d’exploitation ; il ne signifie pas que le produit est composé de 37 microservices ni qu’il supporte une charge de production démontrée.</p>
+  <ul><li>11 conteneurs pour la démonstration et 11 pour la préproduction : interface web, API, proxy HTTP, worker, scheduler, temps réel, transcodage audio, MySQL, deux usages Redis et Neo4j.</li><li>15 conteneurs partagés : forge et CI/CD, orchestration d’agents et recherche sémantique du code, observabilité et logs, suivi d’erreurs, tableaux d’exploitation, bases techniques et passerelles d’accès.</li></ul>
+
+
+</section>
+<section class="case-section" id="stack">
+  <h2>5. Stack</h2>
+
+  <ul><li>PHP 8.2, Laravel 12, Vue 3 et TypeScript.</li><li>MySQL, Redis et Neo4j en exploration graphe/recommandation.</li><li>Python/FastAPI pour des services satellites ciblés.</li><li>Docker, k3s local, OpenAPI/Scramble, PHPUnit et Playwright.</li></ul>
+
+
+</section>
+<section class="case-section" id="auth">
+  <h2>6. Authentification et rôles</h2>
+  <p>Le périmètre couvre l’authentification multi-rôles et des accès différenciés pour les visiteurs non connectés, le public authentifié, les artistes, les labels et l’administration. Les middlewares et matrices de tests servent à vérifier ces frontières.</p>
+
+
+
+</section>
+<section class="case-section" id="ontologie">
+  <h2>7. Ontologie et traçabilité fonctionnelle</h2>
+  <p>Sonomundi possède une ontologie versionnée et lisible par machine. Elle formalise les entités du domaine — comptes, rôles, artistes, labels, sorties, morceaux, événements, lieux, ressources audio, demandes de contenu et preuves — ainsi que leurs relations, invariants, politiques de provenance et règles de visibilité.</p>
+<p>La référence revue du 24 juillet 2026 relie les capacités visibles aux surfaces de l’application, aux six espaces de rôles et aux preuves de test. Elle recense 511 capacités, 113 surfaces de routage et 3 066 cellules capacité-rôle. Les preuves manquantes ou contradictoires restent explicitement à décider ; elles ne sont jamais déduites par similarité ou par un LLM.</p>
+<p>Cette ontologie sert de contrat de connaissance et de gouvernance : elle rend les frontières métier, les droits et les lacunes de couverture auditables par les humains comme par les outils agentiques. Neo4j constitue une exploration distincte pour le graphe et la recommandation ; il n’est pas la source de vérité de l’ontologie.</p>
+
+
+
+</section>
+<section class="case-section" id="donnees">
+  <h2>8. Données et performances</h2>
+  <p>MySQL reste la base applicative principale. Redis est utilisé pour le cache, les queues et la coordination locale. Neo4j relève encore de l’expérimentation. Aucune latence de production réelle ni capacité de charge commerciale n’est publiée : ces mesures n’existent pas dans les preuves disponibles.</p>
+
+
+
+</section>
+<section class="case-section" id="tests">
+  <h2>9. Tests</h2>
+  <p>L’inventaire statique de gitea/main au 16 juillet 2026 recense 2 189 tests PHPUnit répartis dans 401 fichiers PHP. Il décrit le volume de tests présents dans le dépôt, pas le résultat d’une exécution complète ni un taux de couverture.</p>
+<p>Une matrice Playwright complète cette preuve avec 683 scénarios validés sur cinq profils d’accès. Ces chiffres documentent l’étendue du dispositif de validation, sans prétendre à une couverture universelle ni à une validation en production.</p>
+
+
+
+</section>
+<section class="case-section" id="cicd">
+  <h2>10. CI/CD</h2>
+  <p>Les changements sont isolés par branches et worktrees, puis validés avec Docker, Make, tests ciblés et contrôles élargis lorsque les contrats partagés sont touchés. La démo recruteur est figée sur une version dédiée. Le projet conserve une préproduction distincte en amélioration continue.</p>
+
+
+
+</section>
+<section class="case-section" id="observabilite">
+  <h2>11. Observabilité</h2>
+  <p>Grafana/Loki et GlitchTip/Sentry font partie des rails techniques explorés. Une observabilité de production mature, des SLO, un historique d’incidents et des mesures de disponibilité réelles ne sont pas démontrés ; ils restent des travaux d’industrialisation.</p>
+
+
+
+</section>
+<section class="case-section" id="ia">
+  <h2>12. Utilisation des outils IA</h2>
+  <p>J’ai adapté Paperclip comme plan de contrôle du delivery agentique : les spécifications alimentent des lots attribués à des agents spécialisés, avec contexte ciblé, tâches bornées, mémoire documentaire, branches et worktrees isolés, validations Docker/CI et pré-revue des pull requests. Codex, MCP et LangChain/LangGraph complètent ce dispositif pour l’analyse, l’implémentation, les tests, la documentation et les audits.</p>
+<p>L’ontologie et les contrats versionnés fournissent aux agents un vocabulaire métier et des frontières vérifiables, sans leur déléguer la vérité fonctionnelle. Aucun auto-merge ; le LLM n’est jamais la source de vérité et la responsabilité d’intégration reste la mienne.</p>
+<p>À terme, l’objectif est d’automatiser au maximum les validations, revues de PR, mises à jour documentaires, déploiements et alertes de suivi afin de réduire la maintenance courante et d’éviter les interruptions inutiles.</p>
+
+  <figure class="workflow-graphic">
+  <a class="workflow-graphic-preview" href="/heavents-recruiter-pack/captures/11-stack-ia-produit-cicd.png" aria-label="Ouvrir l’infographie en grand">
+    <img src="/heavents-recruiter-pack/captures/11-stack-ia-produit-cicd.png" width="1600" height="2000" loading="lazy" decoding="async" alt="Infographie reliant huit étapes du workflow IA et delivery à huit dimensions du produit Sonomundi.">
+  </a>
+  <p class="workflow-graphic-links"><a href="/heavents-recruiter-pack/captures/11-stack-ia-produit-cicd.png">Ouvrir l’infographie en grand</a> · <a href="/heavents-recruiter-pack/captures/11-stack-ia-produit-cicd.gif">Voir la version animée (GIF)</a></p>
+  <figcaption>Le workflow IA n’est pas présenté comme une fin en soi : chaque étape est reliée à une capacité produit, de l’ownership à la livraison reproductible.</figcaption>
+</figure>
+<details class="workflow-transcript">
+  <summary>Lire la version textuelle de l’infographie</summary>
+  <p>La colonne « Stack IA / delivery » est mise en regard de la colonne « Produit Sonomundi » selon huit correspondances :</p>
+  <ul><li>Agent IA de code → ownership produit.</li><li>Context engineering → back-end senior.</li><li>Orchestration d’agents → front-end applicatif.</li><li>Debug dans un navigateur réel → qualité logicielle.</li><li>Validation automatisée → architecture modulaire.</li><li>Auto-review et gates → media et discovery.</li><li>CI/CD et publication contrôlée → API et documentation.</li><li>Reporting et observabilité → organisation remote-ready et delivery reproductible.</li></ul>
+</details>
+
+</section>
+<section class="case-section" id="limites">
+  <h2>13. Limites actuelles</h2>
+
+  <ul><li>Dépôt privé et démonstration conduite par le candidat.</li><li>Aucune date de sortie imposée : la qualité et la pérennité priment sur la vitesse.</li><li>Billing, wallet, settlement, monétisation et audio réel : chantiers séparés ou partiels.</li><li>Observabilité, sauvegardes, secrets et infrastructure à renforcer pour une industrialisation.</li><li>Certaines surfaces avancées restent gelées ou incomplètes.</li></ul>
+
+
+</section>
+<section class="case-section" id="enseignements">
+  <h2>14. Enseignements</h2>
+  <p>Le principal enseignement est de réduire plus tôt le MVP et de distinguer la preuve technique du volume produit. Les tests, contrats, frontières de modules, migrations et décisions documentées sont plus utiles que les lignes de code ou le nombre de commits. L’IA accélère la production ; elle ne remplace ni le cadrage ni la responsabilité.</p>
+<p>Le pilotage des agents m’oblige à expliciter l’objectif, distribuer des responsabilités, fournir le bon contexte, contrôler les dépendances, donner du feedback et arbitrer les résultats. Ce n’est pas une expérience de management humain, mais un terrain concret pour consolider des pratiques de coordination que je souhaite mettre à profit dans un rôle de contributeur senior ou de lead au service d’une équipe.</p>
+
+
+
+</section>
+<section class="case-section" id="demo">
+  <h2>15. Démonstration et captures</h2>
+  <p>Le parcours recruteur montre le hub d’événements, une région, un événement, un artiste et un morceau. Les captures ci-dessous complètent la démo et l’architecture anonymisée. Aucun accès au dépôt ni installation locale n’est demandé au lecteur.</p>
+
+
+  <div class="case-actions">
+  <a class="button button-primary" href="https://demo.electronic.sonomundi.com/">Ouvrir la démo recruteur</a>
+  <a class="button button-secondary" href="/heavents-recruiter-pack/architecture-anonymisee.html">Lire l’architecture anonymisée</a>
+</div>
+<div class="gallery"><figure>
+  <a href="/heavents-recruiter-pack/captures/01-events-hub.png"><img src="/heavents-recruiter-pack/captures/01-events-hub.png" width="1280" height="720" loading="lazy" decoding="async" alt="Hub des événements dans Sonomundi"></a>
+  <figcaption>Hub des événements</figcaption>
+</figure>
+<figure>
+  <a href="/heavents-recruiter-pack/captures/02-event-open.png"><img src="/heavents-recruiter-pack/captures/02-event-open.png" width="1280" height="720" loading="lazy" decoding="async" alt="Fiche d’un événement ouverte dans Sonomundi"></a>
+  <figcaption>Consultation d’un événement</figcaption>
+</figure>
+<figure>
+  <a href="/heavents-recruiter-pack/captures/03-artist-open.png"><img src="/heavents-recruiter-pack/captures/03-artist-open.png" width="1280" height="720" loading="lazy" decoding="async" alt="Fiche artiste et relations musicales dans Sonomundi"></a>
+  <figcaption>Fiche artiste et relations musicales</figcaption>
+</figure>
+<figure>
+  <a href="/heavents-recruiter-pack/captures/10-architecture-anonymisee.png"><img src="/heavents-recruiter-pack/captures/10-architecture-anonymisee.png" width="1672" height="941" loading="lazy" decoding="async" alt="Schéma anonymisé de l’architecture Sonomundi"></a>
+  <figcaption>Architecture anonymisée</figcaption>
+</figure></div>
+</section></div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p><strong>Sébastien Grans</strong><br>Senior Software Engineer — backend, qualité, architecture et delivery agentique maîtrisé</p>
+    <p><a href="mailto:sebastien.grans@gmail.com">sebastien.grans@gmail.com</a></p>
+    <p><a href="https://github.com/Axxon" rel="me">GitHub</a> · <a href="https://www.linkedin.com/in/axxonn/" rel="me">LinkedIn</a><br>Lozère, France</p>
+  </div>
+</footer>
+</body>
+</html>

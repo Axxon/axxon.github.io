@@ -1,0 +1,48 @@
+.idea/
+node_modules/
+test-results/
+playwright-report/
+dist/*
+!dist/
+!dist/cv-short.html
+!dist/cv-short.pdf
+!dist/cv-pole-emploi.html
+!dist/cv-pole-emploi.pdf
+!dist/cv-final.html
+!dist/cv-final.pdf
+!dist/cv-ats.html
+!dist/cv-ats.pdf
+!dist/cv-short-en.html
+!dist/cv-short-en.pdf
+!dist/cv-final-en.html
+!dist/cv-final-en.pdf
+!dist/cv-ats-en.html
+!dist/cv-ats-en.pdf
+!dist/Sébastien Grans - CV.pdf
+!dist/Sébastien Grans - CV - EN.pdf
+!dist/Sébastien Grans - CV - détaillé.pdf
+!dist/Sébastien Grans - CV - detailed - EN.pdf
+!dist/Sébastien Grans - CV - ATS.pdf
+!dist/Sébastien Grans - CV - ATS - EN.pdf
+!dist/Sébastien Grans - CV - France Travail.pdf
+
+# CV ciblés par candidature, à conserver hors historique Git.
+cv-bluecoders.md
+cv-maestria.md
+cv-neobrain.md
+cv-satelia.md
+cv-seyos.md
+cv-teamis-hellowork.md
+dist/cv-bluecoders.html
+dist/cv-bluecoders.pdf
+dist/cv-maestria.html
+dist/cv-maestria.pdf
+dist/cv-neobrain.html
+dist/cv-neobrain.pdf
+dist/cv-satelia.html
+dist/cv-satelia.pdf
+dist/cv-seyos.html
+dist/cv-seyos.pdf
+dist/cv-teamis-hellowork.html
+dist/cv-teamis-hellowork.pdf
+tmp/
