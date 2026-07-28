@@ -17,7 +17,7 @@ Dans mes projets personnels, j'intègre également l'IA à des applications Lara
 
 **Backend :** PHP 8 · Laravel · Symfony · API Platform · API REST · OpenAPI · Doctrine/Eloquent · Auth0 · Laravel Sanctum · JWT · workers et files de traitement · WebSockets
 
-**Données :** MySQL/MariaDB · PostgreSQL · Redis · modélisation · indexation et optimisation de requêtes
+**Données :** MySQL/MariaDB · PostgreSQL · Redis · analyse de données opérationnelles · suivi de KPI · modélisation · indexation et optimisation de requêtes
 
 **Qualité :** PHPUnit · Behat · PHPStan/Larastan · tests unitaires, d'intégration et fonctionnels · revue de code · refactoring · documentation technique
 
@@ -35,6 +35,8 @@ Dans mes projets personnels, j'intègre également l'IA à des applications Lara
 Cybersécurité et paiement mobile
 
 - Développe et maintient des services Laravel critiques liés à la détection de fraude, au paiement mobile et au traitement de flux en temps réel.
+- Analyse les KPI techniques et métier, les données de suivi et de scoring ainsi que les logs et tableaux de bord ELK/Grafana pour détecter les anomalies, diagnostiquer les incidents et orienter les décisions.
+- Priorise les interventions selon leur valeur métier, leur niveau de risque, leur urgence en production et leur impact sur les utilisateurs et les partenaires.
 - Améliore les performances par l'indexation MySQL et la migration progressive de données de suivi et de scoring vers Redis.
 - Intègre Auth0 et Laravel Sanctum sur plusieurs applications afin d'unifier l'authentification et la gestion des utilisateurs.
 - Diagnostique les incidents à partir des logs et tableaux de bord ELK/Grafana ; intervient sur les API, workers, Redis et MySQL.
