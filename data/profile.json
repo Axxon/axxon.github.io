@@ -719,6 +719,7 @@
           {"id": "demo", "title": "15. Démonstration et captures", "paragraphs": ["Le parcours recruteur montre le hub d’événements, une région, un événement, un artiste et un morceau. Les captures ci-dessous complètent la démo et l’architecture anonymisée. Aucun accès au dépôt ni installation locale n’est demandé au lecteur."]}
         ],
         "demoCta": "Ouvrir la démo recruteur",
+        "demoHint": "Pour accéder à une interface plus complète, créez un compte dans la démo. Sans connexion, la démo reste limitée aux fonctionnalités publiques.",
         "docsCta": "Lire l’architecture anonymisée",
         "backCta": "Revenir à l’accueil"
       }
@@ -821,6 +822,7 @@
           {"id": "demo", "title": "15. Demo and screenshots", "paragraphs": ["The recruiter flow shows the events hub, a region, an event, an artist and a track. The screenshots below complement the demo and anonymized architecture. The reader is not asked for repository access or local installation."]}
         ],
         "demoCta": "Open the recruiter demo",
+        "demoHint": "To access a more complete interface, create an account in the demo. Without signing in, the demo remains limited to public features.",
         "docsCta": "Read the anonymized architecture",
         "backCta": "Back to home"
       }

@@ -453,6 +453,7 @@ function caseStudyPage(lang) {
   <a class="button button-primary" href="${data.heavents.demo}">${escapeHtml(caseCopy.demoCta)}</a>
   <a class="button button-secondary" href="${data.heavents.technicalDocs[lang]}">${escapeHtml(caseCopy.docsCta)}</a>
 </div>
+<p class="demo-access-note">${escapeHtml(caseCopy.demoHint)}</p>
 <div class="gallery">${gallery}</div>` : "";
     return `<section class="case-section" id="${escapeHtml(section.id)}">
   <h2>${escapeHtml(section.title)}</h2>
@@ -476,6 +477,7 @@ ${header(lang, "heavents")}
         <a class="button button-primary" href="${data.heavents.demo}">${escapeHtml(caseCopy.demoCta)}</a>
         <a class="text-link" href="${routes.home[lang]}">${escapeHtml(caseCopy.backCta)}</a>
       </div>
+      <p class="demo-access-note">${escapeHtml(caseCopy.demoHint)}</p>
     </div>
   </header>
 

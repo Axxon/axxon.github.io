@@ -707,6 +707,13 @@ li {
   margin-top: 1.5rem;
 }
 
+.demo-access-note {
+  max-width: 62ch;
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
 .workflow-graphic {
   max-width: 52rem;
   margin: 2rem 0 0;
@@ -944,6 +951,7 @@ li {
   .site-footer,
   .hero-actions,
   .case-actions,
+  .demo-access-note,
   .workflow-graphic-links,
   .skip-link {
     display: none;

@@ -176,6 +176,11 @@ for (const page of pages) {
     check(!/Recherche d’emploi instrumentée|Instrumented job search|844 offres|844 consolidated roles/i.test(cvText), `${page.file}: instrumented job-search metrics must not appear on a CV page`);
     check(/href="https:\/\/activcompany\.com\/"[^>]*>Activ’Company<\/a>/.test(main), `${page.file}: Activ’Company link missing`);
   }
+
+  if (page.type === "heavents") {
+    check(count(main, /class="demo-access-note"/g) === 2, `${page.file}: demo account guidance must appear beside both demo calls to action`);
+    check(textContent(main).includes(data.content[page.lang].case.demoHint), `${page.file}: demo account guidance differs from shared data`);
+  }
 }
 
 const visibleHomeSkillCount = data.skills.reduce((total, group) => total + group.home.fr.length, 0);
