@@ -17,13 +17,13 @@ const pdfOut = path.resolve(outDir, recruiterPdfName(baseName));
 function recruiterPdfName(value) {
   const english = value.startsWith("cv-en-") || value.endsWith("-en");
   const officialNames = {
-    "cv-short": "Sebastien-Grans-CV.pdf",
-    "cv-short-en": "Sebastien-Grans-CV-EN.pdf",
-    "cv-final": "Sebastien-Grans-CV-detaille.pdf",
-    "cv-final-en": "Sebastien-Grans-CV-detailed-EN.pdf",
-    "cv-ats": "Sebastien-Grans-CV-ATS.pdf",
-    "cv-ats-en": "Sebastien-Grans-CV-ATS-EN.pdf",
-    "cv-pole-emploi": "Sebastien-Grans-CV-France-Travail.pdf",
+    "cv-short": "downloads/Sebastien-Grans-CV.pdf",
+    "cv-short-en": "downloads/Sebastien-Grans-CV-EN.pdf",
+    "cv-final": "downloads/Sebastien-Grans-CV-detaille.pdf",
+    "cv-final-en": "downloads/Sebastien-Grans-CV-detailed-EN.pdf",
+    "cv-ats": "downloads/Sebastien-Grans-CV-ATS.pdf",
+    "cv-ats-en": "downloads/Sebastien-Grans-CV-ATS-EN.pdf",
+    "cv-pole-emploi": "downloads/Sebastien-Grans-CV-France-Travail.pdf",
   };
   if (officialNames[value]) {
     return officialNames[value];
@@ -384,6 +384,7 @@ function chromeBinary() {
 }
 
 fs.mkdirSync(outDir, { recursive: true });
+fs.mkdirSync(path.dirname(pdfOut), { recursive: true });
 const markdown = validateCvSource(fs.readFileSync(source, "utf8"));
 const isEnglish = baseName.startsWith("cv-en-") || baseName.endsWith("-en");
 const variantLabel = baseName.includes("plus-que-pro")

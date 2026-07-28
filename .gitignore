@@ -4,6 +4,10 @@ test-results/
 playwright-report/
 dist/*
 !dist/
+!dist/downloads/
+!dist/downloads/Sebastien-Grans-CV*.pdf
+!dist/Sebastien-Grans-CV*.pdf/
+!dist/Sebastien-Grans-CV*.pdf/index.html
 !dist/cv-short.html
 !dist/cv-short.pdf
 !dist/cv-pole-emploi.html

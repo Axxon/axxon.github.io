@@ -75,7 +75,7 @@ function write(relativePath, content) {
 }
 
 function pdfHref(fileName) {
-  return `/dist/${encodeURIComponent(fileName)}`;
+  return `/dist/downloads/${encodeURIComponent(fileName)}`;
 }
 
 function pdfFiles(lang) {
@@ -548,6 +548,44 @@ function legacyCaseStudyRedirect(lang) {
 </html>`;
 }
 
+function resumeWebEntrypoint({ lang, htmlFile, pdfFile }) {
+  const webTarget = `/dist/${htmlFile}`;
+  const downloadTarget = pdfHref(pdfFile);
+  const copy = lang === "fr"
+    ? {
+        title: "CV de Sébastien Grans",
+        message: "Ouverture de la version web du CV, dont les liens externes s’ouvrent dans un nouvel onglet.",
+        webLink: "Ouvrir le CV web",
+        downloadLink: "Télécharger le PDF",
+      }
+    : {
+        title: "Sébastien Grans resume",
+        message: "Opening the web resume, where external links open in a new tab.",
+        webLink: "Open the web resume",
+        downloadLink: "Download the PDF",
+      };
+
+  return `<!DOCTYPE html>
+<html lang="${lang}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${copy.title}</title>
+  <meta http-equiv="refresh" content="0; url=${webTarget}">
+  <link rel="canonical" href="${absolute(webTarget)}">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="redirect-page">
+  <main id="contenu" class="redirect-card">
+    <h1>${copy.title}</h1>
+    <p>${copy.message}</p>
+    <p><a class="button button-primary" href="${webTarget}">${copy.webLink}</a></p>
+    <p><a class="text-link" href="${downloadTarget}" download>${copy.downloadLink}</a></p>
+  </main>
+</body>
+</html>`;
+}
+
 for (const lang of ["fr", "en"]) {
   write(outputPaths.home[lang], homePage(lang));
   write(outputPaths.cv[lang], detailedCvPage(lang));
@@ -557,6 +595,17 @@ for (const lang of ["fr", "en"]) {
 write("index.html", rootRedirect());
 write("fr/heavents/index.html", legacyCaseStudyRedirect("fr"));
 write("en/heavents/index.html", legacyCaseStudyRedirect("en"));
+
+for (const entrypoint of [
+  { lang: "fr", publicFile: "Sebastien-Grans-CV.pdf", htmlFile: "cv-short.html", pdfFile: "Sebastien-Grans-CV.pdf" },
+  { lang: "fr", publicFile: "Sebastien-Grans-CV-detaille.pdf", htmlFile: "cv-final.html", pdfFile: "Sebastien-Grans-CV-detaille.pdf" },
+  { lang: "fr", publicFile: "Sebastien-Grans-CV-ATS.pdf", htmlFile: "cv-ats.html", pdfFile: "Sebastien-Grans-CV-ATS.pdf" },
+  { lang: "en", publicFile: "Sebastien-Grans-CV-EN.pdf", htmlFile: "cv-short-en.html", pdfFile: "Sebastien-Grans-CV-EN.pdf" },
+  { lang: "en", publicFile: "Sebastien-Grans-CV-detailed-EN.pdf", htmlFile: "cv-final-en.html", pdfFile: "Sebastien-Grans-CV-detailed-EN.pdf" },
+  { lang: "en", publicFile: "Sebastien-Grans-CV-ATS-EN.pdf", htmlFile: "cv-ats-en.html", pdfFile: "Sebastien-Grans-CV-ATS-EN.pdf" },
+]) {
+  write(`dist/${entrypoint.publicFile}/index.html`, resumeWebEntrypoint(entrypoint));
+}
 
 const sitemapPairs = [
   { fr: routes.home.fr, en: routes.home.en },

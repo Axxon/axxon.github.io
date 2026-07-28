@@ -128,8 +128,13 @@ Le générateur :
 
 Fichiers à remettre en priorité :
 
-- `dist/Sebastien-Grans-CV.pdf` ;
-- `dist/Sebastien-Grans-CV-EN.pdf` pour la version anglaise.
+- `dist/downloads/Sebastien-Grans-CV.pdf` ;
+- `dist/downloads/Sebastien-Grans-CV-EN.pdf` pour la version anglaise.
+
+Les anciennes URL publiques sous `dist/Sebastien-Grans-CV*.pdf` ouvrent désormais
+la version web correspondante afin que les liens externes puissent s’ouvrir dans
+un nouvel onglet. Les PDF téléchargeables restent disponibles sous
+`dist/downloads/`.
 
 Les alias sans nom servent uniquement à la compatibilité des anciens liens et scripts.
 
@@ -155,9 +160,9 @@ npm test
 Contrôles PDF utiles après génération :
 
 ```bash
-pdfinfo "dist/Sebastien-Grans-CV.pdf"
-pdfinfo -url "dist/Sebastien-Grans-CV.pdf"
-pdftotext "dist/Sebastien-Grans-CV.pdf" -
+pdfinfo "dist/downloads/Sebastien-Grans-CV.pdf"
+pdfinfo -url "dist/downloads/Sebastien-Grans-CV.pdf"
+pdftotext "dist/downloads/Sebastien-Grans-CV.pdf" -
 npm run check:pdf
 ```
 

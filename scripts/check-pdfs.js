@@ -7,12 +7,12 @@ const { spawnSync } = require("child_process");
 const root = path.resolve(__dirname, "..");
 const dist = path.join(root, "dist");
 const documents = [
-  { file: "Sebastien-Grans-CV.pdf", alias: "cv-short.pdf", lang: "fr", expectedPages: 1, timelineChecked: true },
-  { file: "Sebastien-Grans-CV-detaille.pdf", alias: "cv-final.pdf", lang: "fr", timelineChecked: true },
-  { file: "Sebastien-Grans-CV-ATS.pdf", alias: "cv-ats.pdf", lang: "fr", timelineChecked: true },
-  { file: "Sebastien-Grans-CV-EN.pdf", alias: "cv-short-en.pdf", lang: "en", expectedPages: 1, timelineChecked: true },
-  { file: "Sebastien-Grans-CV-detailed-EN.pdf", alias: "cv-final-en.pdf", lang: "en", timelineChecked: true },
-  { file: "Sebastien-Grans-CV-ATS-EN.pdf", alias: "cv-ats-en.pdf", lang: "en", timelineChecked: true },
+  { file: "downloads/Sebastien-Grans-CV.pdf", alias: "cv-short.pdf", lang: "fr", expectedPages: 1, timelineChecked: true },
+  { file: "downloads/Sebastien-Grans-CV-detaille.pdf", alias: "cv-final.pdf", lang: "fr", timelineChecked: true },
+  { file: "downloads/Sebastien-Grans-CV-ATS.pdf", alias: "cv-ats.pdf", lang: "fr", timelineChecked: true },
+  { file: "downloads/Sebastien-Grans-CV-EN.pdf", alias: "cv-short-en.pdf", lang: "en", expectedPages: 1, timelineChecked: true },
+  { file: "downloads/Sebastien-Grans-CV-detailed-EN.pdf", alias: "cv-final-en.pdf", lang: "en", timelineChecked: true },
+  { file: "downloads/Sebastien-Grans-CV-ATS-EN.pdf", alias: "cv-ats-en.pdf", lang: "en", timelineChecked: true },
 ];
 
 const failures = [];
@@ -35,7 +35,7 @@ for (const command of ["pdfinfo", "pdftotext"]) {
 for (const document of documents) {
   const filePath = path.join(dist, document.file);
   const aliasPath = path.join(dist, document.alias);
-  check(document.file.startsWith("Sebastien-Grans-CV"), `${document.file}: invalid recruiter-facing name`);
+  check(path.basename(document.file).startsWith("Sebastien-Grans-CV"), `${document.file}: invalid recruiter-facing name`);
   check(fs.existsSync(filePath), `${document.file}: recruiter-facing PDF is missing`);
   check(fs.existsSync(aliasPath), `${document.alias}: compatibility alias is missing`);
   if (!fs.existsSync(filePath)) continue;

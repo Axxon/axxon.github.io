@@ -82,13 +82,28 @@ test("keyboard order starts with the skip link and keeps a visible focus", async
 
 test("primary downloadable resumes are reachable", async ({ request }) => {
   const pdfs = [
-    "/dist/Sebastien-Grans-CV.pdf",
-    "/dist/Sebastien-Grans-CV-EN.pdf",
+    "/dist/downloads/Sebastien-Grans-CV.pdf",
+    "/dist/downloads/Sebastien-Grans-CV-EN.pdf",
   ];
   for (const pdf of pdfs) {
     const response = await request.get(`${baseUrl}${pdf}`);
     expect(response.status(), pdf).toBe(200);
     expect(response.headers()["content-type"], pdf).toContain("application/pdf");
+  }
+});
+
+test("previously shared PDF URLs preserve the CV and lead to the web version", async ({ page }) => {
+  for (const entrypoint of [
+    { route: "/dist/Sebastien-Grans-CV.pdf", target: "/dist/cv-short.html" },
+    { route: "/dist/Sebastien-Grans-CV-EN.pdf", target: "/dist/cv-short-en.html" },
+  ]) {
+    await page.goto(`${baseUrl}${entrypoint.route}`, { waitUntil: "domcontentloaded" });
+    await page.waitForURL(`**${entrypoint.target}`);
+    await expect(page.locator("main")).toHaveCount(1);
+
+    const externalLinks = page.locator('a[href^="http://"], a[href^="https://"]');
+    expect(await externalLinks.count(), entrypoint.route).toBeGreaterThan(0);
+    await expect(externalLinks.first()).toHaveAttribute("target", "_blank");
   }
 });
 
