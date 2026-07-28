@@ -32,7 +32,7 @@ Je souhaite désormais mettre mon expérience du développement web ainsi que ma
 
 **Juin 2022–juin 2024 (licenciement économique) · 2 ans · CDI · Paris · Full remote**
 
-- **Contexte et objectif :** faire évoluer des services critiques à fort trafic dédiés à la fraude et au paiement mobile. **Apport :** fonctionnalités métier, incidents, performances, migration MySQL/Redis, authentification unifiée et revues pour 4 à 5 développeurs.
+- **Contexte et objectif :** faire évoluer des services critiques à fort trafic dédiés à la fraude et au paiement mobile. **Apport :** analyse des données de production et des KPI techniques et métier pour prioriser les incidents et évolutions selon leur valeur et leur risque ; fonctionnalités métier, performances, migration MySQL/Redis, authentification unifiée et revues pour 4 à 5 développeurs.
 - **Stack :** PHP · Laravel · API · workers · WebSockets · MySQL · Redis · Auth0/Sanctum · Rector · tests · ELK/Grafana · Kubernetes.
 
 ### [Sapiendo](https://www.sapiendo-retraite.fr/) — Développeur Back-end / DevOps
