@@ -143,6 +143,12 @@ for (const page of pages) {
     validateLocalReference(page.file, html, match[1]);
   }
 
+  for (const anchor of html.matchAll(/<a\b[^>]*\bhref="https?:\/\/[^"]+"[^>]*>/gi)) {
+    check(/\btarget="_blank"/i.test(anchor[0]), `${page.file}: external link does not open in a new tab`);
+    check(/\brel="[^"]*\bnoopener\b[^"]*"/i.test(anchor[0]), `${page.file}: external link is missing noopener`);
+    check(/\brel="[^"]*\bnoreferrer\b[^"]*"/i.test(anchor[0]), `${page.file}: external link is missing noreferrer`);
+  }
+
   const headingLevels = [...main.matchAll(/<h([1-3])\b/gi)].map((match) => Number(match[1]));
   for (let index = 1; index < headingLevels.length; index += 1) {
     check(headingLevels[index] <= headingLevels[index - 1] + 1, `${page.file}: heading level skipped near heading ${index + 1}`);
@@ -255,6 +261,13 @@ for (const source of canonicalTimelineSources) {
   }
   check(!/démarche\s+entrepreneuriale|entrepreneurial\s+initiative/i.test(markdown), `${source}: stale entrepreneurial positioning found`);
   check(!/autorisation\s+de\s+travail|eu\s+work\s+authorization|authorized\s+to\s+work|work\s+permit|permis\s+de\s+travail|droit\s+de\s+travailler|right\s+to\s+work|work\s+eligib|citoyennet|citizenship/i.test(markdown), `${source}: forbidden work-authorization wording found`);
+
+  const renderedHtml = fs.readFileSync(path.join(root, "dist", source.replace(/\.md$/, ".html")), "utf8");
+  for (const anchor of renderedHtml.matchAll(/<a\b[^>]*\bhref="https?:\/\/[^"]+"[^>]*>/gi)) {
+    check(/\btarget="_blank"/i.test(anchor[0]), `${source}: rendered external link does not request a new tab`);
+    check(/\brel="[^"]*\bnoopener\b[^"]*"/i.test(anchor[0]), `${source}: rendered external link is missing noopener`);
+    check(/\brel="[^"]*\bnoreferrer\b[^"]*"/i.test(anchor[0]), `${source}: rendered external link is missing noreferrer`);
+  }
 }
 
 if (failures.length > 0) {

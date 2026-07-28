@@ -39,10 +39,38 @@ function absolute(relativeUrl) {
   return `${siteUrl}${relativeUrl.startsWith("/") ? relativeUrl : `/${relativeUrl}`}`;
 }
 
+function externalLinksOpenInNewTab(content) {
+  return content.replace(/<a\b[^>]*>/gi, (anchor) => {
+    const href = anchor.match(/\bhref="([^"]+)"/i)?.[1] || "";
+    if (!/^https?:\/\//i.test(href)) {
+      return anchor;
+    }
+
+    let updated = /\btarget="/i.test(anchor)
+      ? anchor.replace(/\btarget="[^"]*"/i, 'target="_blank"')
+      : anchor.replace(/>$/, ' target="_blank">');
+
+    const rel = updated.match(/\brel="([^"]*)"/i);
+    if (rel) {
+      const values = new Set(rel[1].split(/\s+/).filter(Boolean));
+      values.add("noopener");
+      values.add("noreferrer");
+      updated = updated.replace(rel[0], `rel="${[...values].join(" ")}"`);
+    } else {
+      updated = updated.replace(/>$/, ' rel="noopener noreferrer">');
+    }
+
+    return updated;
+  });
+}
+
 function write(relativePath, content) {
   const target = path.join(root, relativePath);
+  const output = relativePath.endsWith(".html")
+    ? externalLinksOpenInNewTab(content)
+    : content;
   fs.mkdirSync(path.dirname(target), { recursive: true });
-  fs.writeFileSync(target, `${content.trim().replace(/[ \t]+$/gm, "")}\n`);
+  fs.writeFileSync(target, `${output.trim().replace(/[ \t]+$/gm, "")}\n`);
   console.log(`Written ${relativePath}`);
 }
 

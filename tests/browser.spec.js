@@ -91,3 +91,19 @@ test("primary downloadable resumes are reachable", async ({ request }) => {
     expect(response.headers()["content-type"], pdf).toContain("application/pdf");
   }
 });
+
+test("external links on web resumes open in a separate tab safely", async ({ page }) => {
+  for (const route of ["/fr/cv/", "/en/cv/"]) {
+    await page.goto(`${baseUrl}${route}`, { waitUntil: "domcontentloaded" });
+    const externalLinks = page.locator('a[href^="http://"], a[href^="https://"]');
+    expect(await externalLinks.count(), route).toBeGreaterThan(0);
+
+    for (let index = 0; index < await externalLinks.count(); index += 1) {
+      const link = externalLinks.nth(index);
+      expect(await link.getAttribute("target"), `${route} external link ${index + 1}`).toBe("_blank");
+      const rel = (await link.getAttribute("rel"))?.split(/\s+/) || [];
+      expect(rel, `${route} external link ${index + 1}`).toContain("noopener");
+      expect(rel, `${route} external link ${index + 1}`).toContain("noreferrer");
+    }
+  }
+});
