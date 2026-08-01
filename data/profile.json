@@ -32,7 +32,7 @@
       "en": "Permanent Senior Software Engineer / AI-Native Developer role"
     },
     "workMode": {
-      "fr": "Full remote depuis la France ; déménagement possible après la période d'essai",
+      "fr": "Culture de travail en full remote",
       "en": "Remote from France; open to relocation after the probation period"
     }
   },
@@ -235,7 +235,7 @@
           "Montées de versions PHP et des frameworks sur l’ensemble des services, avec Rector, gestion des dépendances, traitement des incompatibilités et contrôle de non-régression.",
           "Indexation MySQL puis migration progressive d’entités très sollicitées vers Redis, déployée par périmètres avec surveillance avant, pendant et après mise en production, et possibilité de rollback.",
           "Prise en compte du versioning et de la compatibilité des APIs, de la continuité de service et de la non-perte de données.",
-          "Intégration Auth0 et Laravel Sanctum sur trois applications Laravel et Dundas pour unifier les procédures de connexion multi-applications.",
+          "Mise en place d’une authentification unifiée avec Auth0 et Laravel Sanctum sur quatre applications métier, dont trois développées avec Laravel.",
           "Mise en place et suivi d’indicateurs via ELK, Grafana et les logs : codes HTTP, erreurs 4xx/5xx, temps de réponse, charge MySQL, incidents et stabilité des déploiements.",
           "Astreinte de production pendant un an, revues de code quotidiennes, documentation Notion, pédagogie Git et ateliers techniques en anglais."
         ],
@@ -246,7 +246,7 @@
           "Upgraded PHP and framework versions across all services using Rector, dependency management, compatibility fixes and regression controls.",
           "MySQL indexing followed by a progressive migration of heavily used entities to Redis, deployed by scope with pre-, during- and post-release monitoring and rollback capability.",
           "Handled API versioning and compatibility, service continuity and no-data-loss constraints.",
-          "Integrated Auth0 and Laravel Sanctum across three Laravel applications and Dundas to unify multi-application login procedures.",
+          "Implemented unified authentication with Auth0 and Laravel Sanctum across four business applications, three of them built with Laravel.",
           "Set up and tracked indicators through ELK, Grafana and logs: HTTP codes, 4xx/5xx errors, response times, MySQL load, incidents and deployment stability.",
           "One year of production on-call rotation, daily code reviews, Notion documentation, Git mentoring and technical workshops in English."
         ]
@@ -633,7 +633,7 @@
       },
       "hero": {
         "eyebrow": "Expérience produit · Qualité logicielle · Delivery agentique maîtrisé",
-        "value": "Fort d’expériences dans des produits et domaines métier variés, je transforme des besoins complexes en logiciels fiables et maintenables. J’étends aujourd’hui cette pratique avec des workflows de développement agentiques fondés sur les spécifications, les tests et la validation humaine.",
+        "value": "Fort d’expériences dans des produits et domaines métier variés, je transforme des besoins complexes en logiciels fiables et maintenables. J’étends aujourd’hui cette pratique avec des workflows de développement agentiques.",
         "technical": "PHP/Laravel/Symfony, APIs, production, ontologie fonctionnelle, Paperclip adapté, agents bornés, CI/CD et décision humaine.",
         "experience": "7 ans cumulés d’expérience professionnelle",
         "international": "Ouvert aux équipes étrangères et au travail en anglais",
