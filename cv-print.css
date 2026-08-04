@@ -377,6 +377,91 @@ li::before {
   page-break-inside: avoid;
 }
 
+.sheet-little-emperors {
+  padding: 7mm 10mm;
+  line-height: 1.22;
+}
+
+.sheet-little-emperors .cv-profile-photo {
+  display: none;
+}
+
+.sheet-little-emperors .cv-title {
+  min-height: 0;
+  margin-bottom: 3mm;
+  padding-bottom: 2mm;
+  padding-right: 0;
+}
+
+.sheet-little-emperors .cv-title::after {
+  right: 0;
+}
+
+.sheet-little-emperors .cv-title h1 {
+  max-width: none;
+  font-size: 7mm;
+}
+
+.sheet-little-emperors .cv-title p {
+  max-width: none;
+  margin-top: 0.45mm;
+  font-size: 2.65mm;
+}
+
+.sheet-little-emperors .section {
+  margin-top: 2.2mm;
+}
+
+.sheet-little-emperors h2 {
+  margin-bottom: 1.5mm;
+  font-size: 3.7mm;
+}
+
+.sheet-little-emperors h3 {
+  font-size: 3.25mm;
+}
+
+.sheet-little-emperors p,
+.sheet-little-emperors li,
+.sheet-little-emperors .section-profile p,
+.sheet-little-emperors .entry p:first-of-type,
+.sheet-little-emperors .entry p:nth-of-type(2),
+.sheet-little-emperors .entry p:last-child {
+  font-size: 3.05mm;
+}
+
+.sheet-little-emperors p {
+  margin-top: 0.7mm;
+}
+
+.sheet-little-emperors li {
+  margin-top: 0.18mm;
+}
+
+.sheet-little-emperors .entry {
+  margin-top: 1.35mm;
+  padding-top: 0.7mm;
+}
+
+.sheet-little-emperors .section-experience .entry {
+  break-inside: auto;
+  page-break-inside: auto;
+}
+
+.sheet-little-emperors .section-experience + .section-experience {
+  break-before: auto;
+  page-break-before: auto;
+}
+
+.sheet-little-emperors .section-other {
+  padding-bottom: 0;
+}
+
+.sheet-little-emperors .section-other p {
+  margin-top: 0.45mm;
+  font-size: 2.9mm;
+}
+
 .sheet-short .section-experience .entry {
   break-inside: auto;
   page-break-inside: auto;
@@ -411,7 +496,9 @@ li::before {
 }
 
 .sheet-short .cv-title h1 {
-  font-size: 7.8mm;
+  max-width: 145mm;
+  font-size: 7.0mm;
+  white-space: nowrap;
 }
 
 .sheet-short .section {
@@ -465,6 +552,213 @@ li::before {
   margin-bottom: 0.35mm;
   font-size: 2.22mm;
 }
+
+.sheet-short.sheet-compact {
+  padding: 6.8mm 8.2mm 6.8mm;
+  line-height: 1.08;
+}
+
+.sheet-short.sheet-tight {
+  padding: 5.6mm 7.2mm 5.6mm;
+  line-height: 1.12;
+}
+
+.sheet-short.sheet-tight .cv-title::after {
+  right: 0;
+}
+
+.sheet-short.sheet-tight .cv-title p:first-of-type {
+  margin-top: 0.8mm;
+}
+
+.sheet-short.sheet-tight .cv-title p:nth-of-type(n + 2):nth-of-type(-n + 5),
+.sheet-short.sheet-tight .cv-title p:nth-of-type(n + 6) {
+  margin-top: 0.45mm;
+}
+
+.sheet-short.sheet-tight .cv-sidebar {
+  margin: 0 0 1.8mm 3.8mm;
+  padding: 2mm;
+}
+
+.sheet-short.sheet-tight .cv-sidebar .section-skills p {
+  margin-bottom: 0.7mm;
+}
+
+.sheet-short.sheet-tight .cv-sidebar h2 {
+  margin-bottom: 1.1mm;
+}
+
+.sheet-short.sheet-compact .cv-title {
+  min-height: 21mm;
+  margin-bottom: 3mm;
+  padding-bottom: 2.3mm;
+}
+
+.sheet-short.sheet-compact .cv-title {
+  padding-right: 0;
+}
+
+.sheet-short.sheet-compact .cv-title::after {
+  right: 0;
+}
+
+.sheet-short.sheet-compact .cv-title h1 {
+  font-size: 7.4mm;
+}
+
+.sheet-short.sheet-compact .cv-title p:first-of-type {
+  margin-top: 1.2mm;
+  font-size: 2.8mm;
+}
+
+.sheet-short.sheet-compact .cv-title p:nth-of-type(n + 2):nth-of-type(-n + 5),
+.sheet-short.sheet-compact .cv-title p:nth-of-type(n + 6) {
+  margin-top: 0.65mm;
+  font-size: 2.25mm;
+}
+
+.sheet-short.sheet-compact .section {
+  margin-top: 1.6mm;
+}
+
+.sheet-short.sheet-compact h2 {
+  margin-bottom: 1.9mm;
+  font-size: 3.0mm;
+}
+
+.sheet-short.sheet-compact h3 {
+  font-size: 2.62mm;
+}
+
+.sheet-short.sheet-compact .cv-profile-photo {
+  display: none;
+}
+
+.sheet-short.sheet-compact p {
+  margin-top: 0.52mm;
+  font-size: 1.92mm;
+}
+
+.sheet-short.sheet-compact li {
+  margin-top: 0.2mm;
+  padding-left: 2.8mm;
+  font-size: 1.76mm;
+}
+
+.sheet-short.sheet-compact .section-profile p {
+  max-width: 196mm;
+  margin-top: 0.55mm;
+  font-size: 1.9mm;
+}
+
+.sheet-short.sheet-compact li::before {
+  top: 1.05mm;
+}
+
+.sheet-short.sheet-compact .entry {
+  margin-top: 1mm;
+  padding-top: 0.6mm;
+}
+
+.sheet-short.sheet-compact .entry p:first-of-type,
+.sheet-short.sheet-compact .entry p:nth-of-type(2),
+.sheet-short.sheet-compact .entry p:last-child {
+  font-size: 1.75mm;
+}
+
+.sheet-short.sheet-tight .cv-title {
+  min-height: 21mm;
+  margin-bottom: 2.8mm;
+  padding-bottom: 2.3mm;
+}
+
+.sheet-short.sheet-tight .cv-title::after {
+  right: 0;
+}
+
+.sheet-short.sheet-tight .cv-title h1 {
+  max-width: 140mm;
+}
+
+.sheet-short.sheet-tight .cv-title p:first-of-type {
+  margin-top: 0.95mm;
+}
+
+.sheet-short.sheet-tight .cv-title p:nth-of-type(n + 2):nth-of-type(-n + 5),
+.sheet-short.sheet-tight .cv-title p:nth-of-type(n + 6) {
+  margin-top: 0.55mm;
+}
+
+.sheet-short.sheet-tight .cv-sidebar {
+  margin: 0 0 2mm 4mm;
+  padding: 2.2mm;
+}
+
+.sheet-short.sheet-tight .section {
+  margin-top: 2mm;
+}
+
+.sheet-short.sheet-tight .entry {
+  margin-top: 1.4mm;
+  padding-top: 1mm;
+  border-top-width: 0.15mm;
+}
+
+.sheet-short.sheet-tight .entry:first-of-type {
+  margin-top: 0;
+}
+
+.sheet-short.sheet-tight .entry p:first-of-type {
+  margin-top: 0.65mm;
+}
+
+.sheet-short.sheet-tight .entry p:nth-of-type(2) {
+  margin-top: 0.75mm;
+}
+
+.sheet-short.sheet-tight .section-profile p {
+  font-size: 2.5mm;
+}
+
+.sheet-short.sheet-tight .entry p:first-of-type,
+.sheet-short.sheet-tight .entry p:nth-of-type(2),
+.sheet-short.sheet-tight .entry p:last-child {
+  font-size: 2.46mm;
+}
+
+.sheet-short.sheet-tight .section-skills p {
+  margin-bottom: 0.9mm;
+}
+
+.sheet-short.sheet-tight .section-project .entry {
+  padding: 1.2mm;
+}
+
+.sheet-short.sheet-tight .section-experience > p:first-of-type {
+  margin: 0 0 2.7mm;
+  padding: 1.9mm 2.5mm;
+}
+
+.sheet-short.sheet-compact .section-skills p {
+  margin-bottom: 0.8mm;
+  font-size: 1.8mm;
+}
+
+.sheet-short.sheet-compact .section-skills strong {
+  margin-bottom: 0.28mm;
+  font-size: 1.72mm;
+}
+
+.sheet-short.sheet-compact .section-other li {
+  margin-top: 0.35mm;
+}
+
+.sheet-short.sheet-variant-b {
+  padding: 7mm 9mm 7mm;
+  line-height: 1.25;
+}
+
 
 .sheet-short .section-other li {
   margin-top: 0.35mm;

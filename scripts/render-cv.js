@@ -60,6 +60,7 @@ function inlineMarkdown(value) {
 
   html = html.replace(/`([^`]+)`/g, "<code>$1</code>");
   html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  html = html.replace(/\*([^*]+)\*/g, "<em>$1</em>");
   html = html.replace(
     /\[([^\]]+)]\((#[^)]+)\)/g,
     '<a href="$2">$1</a>',
@@ -87,12 +88,27 @@ function slugify(value) {
     .replace(/^-|-$/g, "");
 }
 
+function hasCompactManualHeader(markdown) {
+  const lines = markdown.split(/\r?\n/).map((line) => line.trim()).filter((line) => line.length > 0);
+  if (lines.length < 4) {
+    return false;
+  }
+  if (!lines[0].startsWith("# ")) {
+    return false;
+  }
+  return lines[3] === "---";
+}
+
 function sectionClass(title) {
   const slug = slugify(title);
   if (slug.includes("profil")) {
     return "section section-profile";
   }
-  if (slug.includes("competences-cles") || slug.includes("key-skills")) {
+  if (
+    slug.includes("competences-cles")
+    || slug.includes("key-skills")
+    || slug.includes("core-skills")
+  ) {
     return "section section-skills section-sidebar";
   }
   if (slug === "competences" || slug === "skills" || slug.includes("technical-skills")) {
@@ -107,6 +123,9 @@ function sectionClass(title) {
   if (slug.includes("education")) {
     return "section section-other section-sidebar";
   }
+  if (slug.includes("languages") || slug.includes("langues")) {
+    return "section section-sidebar";
+  }
   if (slug.includes("informations-complementaires") || slug.includes("additional-information")) {
     return "section section-other section-sidebar";
   }
@@ -117,15 +136,17 @@ function sectionClass(title) {
 }
 
 function ensureCvHeader(markdown) {
+  const compactManualHeader = hasCompactManualHeader(markdown);
   const lines = markdown.split(/\r?\n/);
   const headerEnd = lines.findIndex((line, index) =>
     index > 0 && (line.trim() === "---" || line.startsWith("## "))
   );
   let end = headerEnd === -1 ? lines.length : headerEnd;
+  const fullDocument = lines.join("\n");
   let header = lines.slice(0, end).join("\n");
 
   const identityValues = [profile.identity.name, profile.identity.email, profile.identity.github, profile.identity.linkedin];
-  if (identityValues.some((value) => !header.includes(value))) {
+  if (!compactManualHeader && identityValues.some((value) => !fullDocument.includes(value))) {
     const contactLine = `${profile.identity.name} · [${profile.identity.email}](mailto:${profile.identity.email}) · [GitHub](${profile.identity.github}) · [LinkedIn](${profile.identity.linkedin})`;
     const titleLine = lines.findIndex((line, index) => index < end && line.startsWith("# "));
     lines.splice(titleLine === -1 ? 0 : titleLine + 1, 0, "", contactLine);
@@ -133,7 +154,7 @@ function ensureCvHeader(markdown) {
     header = lines.slice(0, end).join("\n");
   }
 
-  if (header.includes(completeCvUrl)) {
+  if (compactManualHeader || fullDocument.includes(completeCvUrl)) {
     return lines.join("\n");
   }
 
@@ -157,12 +178,13 @@ function validateCvSource(markdown) {
     index > 0 && (line.trim() === "---" || line.startsWith("## "))
   );
   const header = lines.slice(0, headerEnd === -1 ? lines.length : headerEnd).join("\n");
-  if (!header.includes(completeCvUrl)) {
+  const fullText = lines.join("\n");
+  if (!hasCompactManualHeader(markdown) && !header.includes(completeCvUrl) && !fullText.includes(completeCvUrl)) {
     throw new Error(`Complete CV URL missing from header in ${path.relative(root, source)}`);
   }
 
   for (const required of [profile.identity.name, profile.identity.email, profile.identity.github, profile.identity.linkedin]) {
-    if (!header.includes(required)) {
+    if (!hasCompactManualHeader(markdown) && !header.includes(required) && !fullText.includes(required)) {
       throw new Error(`Shared identity value missing from header in ${path.relative(root, source)}: ${required}`);
     }
   }
@@ -326,14 +348,25 @@ function renderMarkdown(markdown, lang) {
 function renderHtml(markdown, variantLabel, lang, targetName) {
   markdown = ensureCvHeader(markdown);
   const title = markdown.match(/^#\s+(.+)$/m)?.[1] || "CV";
-  const sheetClass = targetName.includes("final")
-    ? "sheet sheet-detail"
-    : targetName.includes("ats")
-      ? "sheet sheet-ats"
-      : "sheet sheet-short";
-  const targetClass = targetName.includes("plus-que-pro")
-    ? " sheet-plus-que-pro"
-    : "";
+  const isLittleEmperors = targetName.includes("little-emperors");
+  const isCompactNew = targetName === "cv-en-new";
+  const isVariantB = targetName === "cv-en-new-b";
+  const isTightNew = targetName === "new";
+  const sheetClass = isCompactNew
+    ? "sheet sheet-short sheet-compact"
+    : isVariantB
+      ? "sheet sheet-short sheet-variant-b"
+      : isTightNew
+        ? "sheet sheet-short sheet-tight"
+    : targetName.includes("final") || isLittleEmperors
+      ? "sheet sheet-detail"
+      : targetName.includes("ats")
+        ? "sheet sheet-ats"
+        : "sheet sheet-short";
+  const targetClass = [
+    targetName.includes("plus-que-pro") ? "sheet-plus-que-pro" : "",
+    isLittleEmperors ? "sheet-little-emperors" : "",
+  ].filter(Boolean).map((className) => ` ${className}`).join("");
   const rendered = renderMarkdown(markdown, lang);
   const firstSection = rendered.indexOf("<section ");
   const prefix = firstSection === -1 ? rendered : rendered.slice(0, firstSection);
